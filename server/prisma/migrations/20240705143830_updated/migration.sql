@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Item" ALTER COLUMN "lowOnStock" SET DATA TYPE DECIMAL(65,30);

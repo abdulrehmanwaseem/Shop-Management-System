@@ -1,0 +1,2226 @@
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: Invalid username or password
+    at file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/controllers/auth.controller.js:72:17 {
+  statusCode: 400,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+[]
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[]
+[]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+[
+  {
+    id: 50,
+    name: 'Ali Raza General Autos',
+    amount: 14400,
+    invoiceTypeId: 2,
+    paymentStatusId: 3,
+    paidAmount: 0,
+    particular: 'SPARK PLUG',
+    date: 2024-08-19T19:00:00.000Z,
+    isCancelled: false,
+    remainingAmount: 14400,
+    createdAt: 2024-08-24T21:36:34.677Z,
+    updatedAt: 2024-08-24T21:36:34.677Z,
+    paymentStatus: { name: 'Unpaid' }
+  }
+]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+PayloadTooLargeError: request entity too large
+    at readStream (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\raw-body\index.js:163:17)
+    at getRawBody (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\raw-body\index.js:116:12)
+    at read (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\cors\lib\index.js:188:7) {
+  expected: 16696,
+  length: 16696,
+  limit: 12288,
+  type: 'entity.too.large'
+}
+PayloadTooLargeError: request entity too large
+    at readStream (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\raw-body\index.js:163:17)
+    at getRawBody (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\raw-body\index.js:116:12)
+    at read (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at cors (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\cors\lib\index.js:188:7) {
+  expected: 16696,
+  length: 16696,
+  limit: 12288,
+  type: 'entity.too.large'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+PrismaClientValidationError: 
+Invalid `prisma.item.create()` invocation:
+
+{
+  data: {
+    lowOnStock: 5,
+    salePrice: 350,
+    purchasePrice: 290,
+    description: "",
+    companyId: 51,
+    name: "Bearing 6204 Max",
++   company: {
++     create: CompanyCreateWithoutItemsInput | CompanyUncheckedCreateWithoutItemsInput,
++     connectOrCreate: CompanyCreateOrConnectWithoutItemsInput,
++     connect: CompanyWhereUniqueInput
++   }
+  }
+}
+
+Argument `company` is missing.
+    at Sn (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:115:7526)
+    at _n.handleRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6570)
+    at _n.handleAndLogRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6235)
+    at _n.request (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:131:9116)
+    at async file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/utils/crudFunctions.js:99:18 {
+  clientVersion: '5.16.0'
+}
+PrismaClientValidationError: 
+Invalid `prisma.item.create()` invocation:
+
+{
+  data: {
+    lowOnStock: 5,
+    salePrice: 350,
+    purchasePrice: 290,
+    description: "",
+    companyId: 51,
+    name: "Bearing 6204 Max",
++   company: {
++     create: CompanyCreateWithoutItemsInput | CompanyUncheckedCreateWithoutItemsInput,
++     connectOrCreate: CompanyCreateOrConnectWithoutItemsInput,
++     connect: CompanyWhereUniqueInput
++   }
+  }
+}
+
+Argument `company` is missing.
+    at Sn (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:115:7526)
+    at _n.handleRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6570)
+    at _n.handleAndLogRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6235)
+    at _n.request (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:131:9116)
+    at async file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/utils/crudFunctions.js:99:18 {
+  clientVersion: '5.16.0'
+}
+PrismaClientValidationError: 
+Invalid `prisma.item.create()` invocation:
+
+{
+  data: {
+    lowOnStock: 0,
+    salePrice: 200,
+    purchasePrice: 100,
+    description: "",
+    companyId: 51,
+    name: "Bearing 6204 Max",
++   company: {
++     create: CompanyCreateWithoutItemsInput | CompanyUncheckedCreateWithoutItemsInput,
++     connectOrCreate: CompanyCreateOrConnectWithoutItemsInput,
++     connect: CompanyWhereUniqueInput
++   }
+  }
+}
+
+Argument `company` is missing.
+    at Sn (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:115:7526)
+    at _n.handleRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6570)
+    at _n.handleAndLogRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6235)
+    at _n.request (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:131:9116)
+    at async file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/utils/crudFunctions.js:99:18 {
+  clientVersion: '5.16.0'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Baba' }
+Error: Invalid date range format. Expected in range
+    at file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/controllers/dashboard.controller.js:7:11
+    at asyncUtilWrap (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:37:5)
+Error: Invalid date range format. Expected in range
+    at file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/controllers/dashboard.controller.js:128:11
+    at asyncUtilWrap (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:37:5)
+{
+  name: 'Hamza Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Nimra Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Abu Baker Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{ name: 'Ultima' }
+{ name: 'Koito' }
+{ name: 'Fataba Few Japan' }
+{ name: 'Guard' }
+{ name: 'Flamigo' }
+{ name: 'Shellock' }
+{ name: 'AB Cables' }
+{ name: 'Reco' }
+{ name: 'Gct' }
+{ name: 'Casta' }
+{ name: 'Mk Japan' }
+{ name: 'Seiken ' }
+{ name: 'Bando China' }
+{ name: '7 Cf' }
+{ name: 'Jmil' }
+{ name: 'Moba' }
+{
+  lowOnStock: 0,
+  salePrice: 200,
+  purchasePrice: 140,
+  description: '',
+  companyId: 10,
+  name: 'Plug Seal Cultus Efi'
+}
+{
+  lowOnStock: 0,
+  salePrice: 1260,
+  purchasePrice: 1160,
+  description: '',
+  companyId: 52,
+  name: 'Plug Wire Chamber'
+}
+{
+  lowOnStock: 0,
+  salePrice: 610,
+  purchasePrice: 560,
+  description: '',
+  companyId: 53,
+  name: 'Bulb 9005'
+}
+{
+  lowOnStock: 0,
+  salePrice: 530,
+  purchasePrice: 500,
+  description: '',
+  companyId: 53,
+  name: 'Bulb H4'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 34,
+  name: 'H4 Grip'
+}
+{
+  lowOnStock: 0,
+  salePrice: 580,
+  purchasePrice: 550,
+  description: '',
+  companyId: 54,
+  name: 'RADIATOR CAP R123'
+}
+{
+  lowOnStock: 0,
+  salePrice: 600,
+  purchasePrice: 570,
+  description: '',
+  companyId: 54,
+  name: 'RADIATOR CAP R125'
+}
+{ name: 'Fic Japan' }
+{
+  lowOnStock: 0,
+  salePrice: 550,
+  purchasePrice: 480,
+  description: '',
+  companyId: 68,
+  name: 'CLUTH KIT Fr 1270'
+}
+{ name: 'Denso' }
+{
+  lowOnStock: 0,
+  salePrice: 250,
+  purchasePrice: 175,
+  description: '',
+  companyId: 69,
+  name: 'Spark Plug W16'
+}
+{
+  lowOnStock: 0,
+  salePrice: 290,
+  purchasePrice: 270,
+  description: '',
+  companyId: 55,
+  name: 'Brake Oil'
+}
+{
+  lowOnStock: 0,
+  salePrice: 170,
+  purchasePrice: 150,
+  description: '',
+  companyId: 51,
+  name: 'Bearing 6201 Max'
+}
+{
+  lowOnStock: 0,
+  salePrice: 220,
+  purchasePrice: 195,
+  description: '',
+  companyId: 51,
+  name: 'Bearing 6203 Max'
+}
+{
+  lowOnStock: 0,
+  salePrice: 220,
+  purchasePrice: 195,
+  description: '',
+  companyId: 51,
+  name: 'Bearing 6301 Max'
+}
+{
+  lowOnStock: 0,
+  salePrice: 450,
+  purchasePrice: 400,
+  description: '',
+  companyId: 56,
+  name: 'Injector Cleaner Petrol'
+}
+{
+  lowOnStock: 0,
+  salePrice: 530,
+  purchasePrice: 400,
+  description: '',
+  companyId: 56,
+  name: 'Injector Cleaner Diesel'
+}
+{
+  lowOnStock: 0,
+  salePrice: 430,
+  purchasePrice: 370,
+  description: '',
+  companyId: 34,
+  name: 'Shellock Japan Red Cap'
+}
+{
+  lowOnStock: 0,
+  salePrice: 450,
+  purchasePrice: 400,
+  description: '',
+  companyId: 58,
+  name: 'Dagi Cable Margala'
+}
+{
+  lowOnStock: 0,
+  salePrice: 550,
+  purchasePrice: 500,
+  description: '',
+  companyId: 34,
+  name: 'Viper Blade Set Corolla 2005'
+}
+{
+  lowOnStock: 0,
+  salePrice: 470,
+  purchasePrice: 450,
+  description: '',
+  companyId: 34,
+  name: 'Side Glass Cultus'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Bezel Cultus Left'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Bezel Cultus Right'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Outer Handle Cultus Front Left'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Outer Handle Cultus Front Right'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Outer Handle Cultus Rear Left'
+}
+{
+  lowOnStock: 0,
+  salePrice: 130,
+  purchasePrice: 100,
+  description: '',
+  companyId: 59,
+  name: 'Outer Handle Cultus Rear Right'
+}
+{
+  lowOnStock: 0,
+  salePrice: 320,
+  purchasePrice: 260,
+  description: '',
+  companyId: 60,
+  name: 'Side Glass Cuore'
+}
+{
+  lowOnStock: 0,
+  salePrice: 450,
+  purchasePrice: 300,
+  description: '',
+  companyId: 61,
+  name: 'Car Shampoo'
+}
+{
+  lowOnStock: 0,
+  salePrice: 4050,
+  purchasePrice: 4000,
+  description: '',
+  companyId: 62,
+  name: '5070'
+}
+{
+  lowOnStock: 0,
+  salePrice: 2680,
+  purchasePrice: 2650,
+  description: '',
+  companyId: 62,
+  name: '5519'
+}
+{
+  lowOnStock: 0,
+  salePrice: 400,
+  purchasePrice: 200,
+  description: '',
+  companyId: 63,
+  name: 'Plug Seal Indus Corolla'
+}
+{
+  lowOnStock: 0,
+  salePrice: 260,
+  purchasePrice: 220,
+  description: '',
+  companyId: 64,
+  name: '3Pk 630'
+}
+{
+  lowOnStock: 0,
+  salePrice: 520,
+  purchasePrice: 480,
+  description: '',
+  companyId: 66,
+  name: 'Dagi Latch Mehran O.E.M'
+}
+{
+  lowOnStock: 0,
+  salePrice: 850,
+  purchasePrice: 800,
+  description: '',
+  companyId: 50,
+  name: 'Brake Oil'
+}
+{
+  lowOnStock: 0,
+  salePrice: 300,
+  purchasePrice: 275,
+  description: '',
+  companyId: 67,
+  name: 'Black Spray'
+}
+{
+  lowOnStock: 0,
+  salePrice: 350,
+  purchasePrice: 330,
+  description: '',
+  companyId: 65,
+  name: 'Dashboard Polish'
+}
+{
+  name: 'Arslan Motors',
+  contact1: '03147072670',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Nomi Bhai Show Parts',
+  contact1: '03153670960',
+  contact2: '',
+  address: 'Gari khata'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+193888
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+193888
+{ name: 'Shera Commission' }
+{ name: 'Roti' }
+191188
+191188
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+191188
+191188
+191188
+191188
+191188
+191188
+191188
+191188
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+191188
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[ 'Sep 1, 2024', 'Sep 3, 2024' ]
+191188
+[ 'Sep 1, 2024', 'Sep 3, 2024' ]
+191188
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+191188
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{
+  lowOnStock: 5,
+  salePrice: 700,
+  purchasePrice: 550,
+  description: '',
+  companyId: 70,
+  name: 'Injector Seal Corolla'
+}
+{
+  lowOnStock: 5,
+  salePrice: 700,
+  purchasePrice: 550,
+  description: '',
+  companyId: 1,
+  name: '0032'
+}
+198878
+198878
+198878
+198878
+198878
+198878
+198878
+198878
+198878
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Charity' }
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Khana' }
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+{
+  name: 'Al Furqan Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Al Furqan Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Zakir Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Coolant' }
+{
+  name: 'Sartaj Autos',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{ name: 'Xpert' }
+{ name: 'Oil Filter' }
+{
+  name: 'Filter House ',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{ name: 'Gear Foundation' }
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Bearing' }
+{ name: 'Thailand' }
+{ name: 'Ngk' }
+{ name: 'Bazil' }
+{ name: 'Point' }
+{ name: 'Plug Adopter' }
+{ name: 'Horn' }
+{ name: 'Leppon' }
+{ name: 'Brake Oil' }
+{
+  name: 'Nazeer Bearing',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+{ name: 'Electricity Bill' }
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ReferenceError: prismaClient is not defined
+    at file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/controllers/invoice.controller.js:169:3
+    at asyncUtilWrap (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express-async-handler\index.js:3:20)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:421:3)
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+PrismaClientValidationError: 
+Invalid `prisma.invoice.findMany()` invocation:
+
+{
+  where: {
+    date: {
+      gte: new Date("2024-09-14T19:00:00.000Z"),
+      lte: new Date("2024-09-26T19:00:00.000Z")
+    },
+    invoiceTypeId: 2,
+    remainingAmount: {
+      gt: 0
+    },
+    isCancelled: false
+  },
+  include: {
+    paymentStatus: {
+      select: {
+        name: true
+      }
+    }
+  },
+  orderBy: {
+    remainingAmount: true
+                     ~~~~
+  }
+}
+
+Invalid value for argument `remainingAmount`. Expected SortOrder.
+    at Sn (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:115:7526)
+    at _n.handleRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6570)
+    at _n.handleAndLogRequestError (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:6235)
+    at _n.request (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:122:5919)
+    at async l (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:131:9116)
+    at async file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/controllers/dashboard.controller.js:156:24 {
+  clientVersion: '5.16.0'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{
+  name: 'Faisal Motors',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Shazad Bhai Bhai Autos Lhr',
+  contact1: '03004249959',
+  contact2: '',
+  address: 'Lahore'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully

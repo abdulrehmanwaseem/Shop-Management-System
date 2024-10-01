@@ -1,0 +1,31 @@
+{
+  "name": "server-1",
+  "version": "1.0.0",
+  "description": "Shop Managment System",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "SET NODE_ENV=PRODUCTION & node server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT & nodemon server.js"
+  },
+  "keywords": [
+    "Shop Managment System"
+  ],
+  "author": "Abdul Rehman",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "node-windows": "^1.0.0-beta.8",
+    "prisma": "^5.13.0"
+  }
+}

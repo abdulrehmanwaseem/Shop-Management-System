@@ -1,0 +1,151 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Customer {
+  id        Int      @id @default(autoincrement())
+  name      String
+  contact1  String?
+  contact2  String?
+  address   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Company {
+  id        Int      @id @default(autoincrement())
+  name      String
+  items     Item[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  items     Item[]
+}
+
+model Field {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  items     Item[]
+}
+
+model Variant {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  items     Item[]
+}
+
+model Item {
+  id          Int      @id @default(autoincrement())
+  companyId   Int
+  company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  
+  categoryId   Int?
+  category     Category?  @relation(fields: [categoryId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  fieldId      Int?
+  field        Field?   @relation(fields: [fieldId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  
+  variantId    Int?
+  variant      Variant? @relation(fields: [variantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+ 
+  name        String
+  fullName    String    @unique
+  description String?
+  
+  purchasePrice       Decimal
+  oldPurchasePrice    Decimal @default(0)
+  
+  salePrice       Decimal
+  oldSalePrice  Decimal @default(0)
+  
+  stock       Decimal @default(0)
+  lowOnStock  Decimal
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Vendor {
+  id        Int      @id @default(autoincrement())
+  name      String
+  contact1  String?
+  contact2  String?
+  address   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Expense {
+  id        Int      @id @default(autoincrement())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model InvoiceType {
+  id            Int              @id @default(autoincrement())
+  name          String
+  Invoice       Invoice[]
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model PaymentStatus {
+  id            Int              @id @default(autoincrement())
+  name          String
+  Invoice       Invoice[]
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
+
+model Invoice {
+  id            Int           @id @default(autoincrement())
+  name          String
+  amount        Decimal
+  invoiceTypeId Int
+  invoiceType   InvoiceType   @relation(fields: [invoiceTypeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  paymentStatusId Int
+  paymentStatus PaymentStatus @relation(fields: [paymentStatusId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  paidAmount    Decimal @default(0)
+  particular    String
+  date          DateTime
+  isCancelled   Boolean @default(false)
+  remainingAmount Decimal @default(0)
+  revenue         Decimal @default(0)
+  items         String    @default("")
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+}
+
+
+model Capital {
+  id            Int              @id @default(autoincrement())
+  amount        Decimal
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+}
