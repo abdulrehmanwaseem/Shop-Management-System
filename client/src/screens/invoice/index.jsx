@@ -86,6 +86,13 @@ const Invoice = () => {
       },
     },
     {
+      field: "discount",
+      header: "Discount",
+      body: ({ discount }) => {
+        return <span>{currencyFormatter.format(discount)}</span>;
+      },
+    },
+    {
       field: "remainingAmount",
       header: "Remaining Amount",
       body: ({ remainingAmount }) => {

@@ -137,6 +137,7 @@ model Invoice {
   isCancelled   Boolean @default(false)
   remainingAmount Decimal @default(0)
   revenue         Decimal @default(0)
+  discount        Decimal @default(0)
   items         String    @default("")
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt

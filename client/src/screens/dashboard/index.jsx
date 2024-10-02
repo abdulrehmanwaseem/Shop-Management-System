@@ -10,7 +10,6 @@ import {
 } from "../../redux/apis/dashboardApi";
 import { currencyFormatter } from "../../lib/currencyLogic";
 import { dashboardSchema } from "../../Validations";
-
 import {
   lowOnStockItemsColumn,
   recievableItemsColumn,
@@ -88,9 +87,11 @@ const Dashboard = () => {
           ></CardDataStats>
           <CardDataStats
             title="Total Revenue"
-            total={`${currencyFormatter.format(
-              data?.data?.totalRevenue || 0
-            )} (${currencyFormatter.format(data?.data?.expectedRevenue || 0)})`}
+            total={currencyFormatter.format(data?.data?.totalRevenue || 0)}
+          ></CardDataStats>
+          <CardDataStats
+            title="Expected Revenue"
+            total={currencyFormatter.format(data?.data?.expectedRevenue || 0)}
           ></CardDataStats>
           <CardDataStats
             title="Total Inventory"
@@ -113,7 +114,6 @@ const Dashboard = () => {
             )}
           ></CardDataStats>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card className="space-y-4">
             <p className="font-semibold text-lg">Total Payable Items</p>
@@ -125,7 +125,6 @@ const Dashboard = () => {
               addBtn={false}
             />
           </Card>
-
           <Card className="space-y-4">
             <p className="font-semibold text-lg">Total Receivable Items</p>
             <DataTable

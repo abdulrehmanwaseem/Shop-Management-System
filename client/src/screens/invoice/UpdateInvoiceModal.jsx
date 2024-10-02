@@ -16,6 +16,7 @@ const UpdateInvoiceModal = () => {
       paymentStatusId: data.paymentStatusId,
       remainingAmount: data.remainingAmount,
       paidAmount: data.paidAmount,
+      discount: 0,
     },
   });
   const dispatch = useDispatch();
@@ -85,6 +86,15 @@ const UpdateInvoiceModal = () => {
               name="remainingAmount"
               type="number"
               maxLimit={data?.remainingAmount}
+              placeholder="Enter name"
+            />
+          )}
+          {paymentStatus === 2 && (
+            <Input
+              label={"Discount Amount"}
+              name="discount"
+              type="number"
+              maxLimit={data?.remainingAmount - 1}
               placeholder="Enter name"
             />
           )}
