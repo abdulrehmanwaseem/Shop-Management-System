@@ -20,6 +20,7 @@ const PreviewInvoiceModal = () => {
     remainingAmount,
     particular,
     items,
+    discount,
   } = data;
 
   const handlePrint = useReactToPrint({
@@ -95,13 +96,32 @@ const PreviewInvoiceModal = () => {
               ))}
             </tbody>
           </table>
-          <div className="flex items-center justify-end mb-3">
-            <div className="text-gray-700 font-bold">
-              {currencyFormatter.format(amount)}
+          <div className="flex flex-col items-end mb-1 gap-1">
+            <div className="flex justify-between w-full font-bold">
+              <p className="w-[90%] text-right">SubTotal:</p>{" "}
+              <p className="w-[10%] text-right">
+                {currencyFormatter.format(amount)}
+              </p>
+            </div>
+            {discount && (
+              <div className="flex justify-between w-full font-bold">
+                <p className="w-[90%] text-right">Discount:</p>{" "}
+                <p className="w-[10%] text-right">
+                  -{currencyFormatter.format(1000)}
+                </p>
+              </div>
+            )}
+            <div className="flex justify-between w-full font-bold">
+              <p className="w-[90%] text-right">Total Amount:</p>{" "}
+              <p className="w-[10%] text-right">
+                {currencyFormatter.format(amount - 1000)}
+              </p>
             </div>
           </div>
+
           <div className="space-y-1">
             <h2 className=" font-bold">Payment Details:</h2>
+
             <div className="text-gray-700">
               Paid Amount:{" "}
               <span className="text-gray-700 font-bold">

@@ -42,6 +42,7 @@ const UpdateInvoiceModal = () => {
       remainingAmount,
       invoiceType: data.invoiceType,
       amountPaid: parseInt(data.remainingAmount) - parseInt(remainingAmount),
+      amount: amount,
       paidAmount,
       paymentStatusId,
     }).unwrap();
@@ -89,7 +90,7 @@ const UpdateInvoiceModal = () => {
               placeholder="Enter name"
             />
           )}
-          {paymentStatus === 2 && (
+          {paymentStatus !== 3 && (
             <Input
               label={"Discount Amount"}
               name="discount"

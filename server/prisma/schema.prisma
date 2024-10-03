@@ -138,6 +138,7 @@ model Invoice {
   remainingAmount Decimal @default(0)
   revenue         Decimal @default(0)
   discount        Decimal @default(0)
+  finalAmount     Decimal 
   items         String    @default("")
   createdAt     DateTime      @default(now())
   updatedAt     DateTime      @updatedAt

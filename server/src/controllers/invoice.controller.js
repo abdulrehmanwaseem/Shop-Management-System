@@ -49,6 +49,7 @@ const createInvoice = TryCatch(async (req, res, next) => {
           ...invoice,
           items: JSON.stringify(items),
           date: new Date(invoice.date),
+          finalAmount: invoice.amount,
         },
       });
 
@@ -157,10 +158,8 @@ const updateInvoice = TryCatch(async (req, res, next) => {
     remainingAmount,
     paymentStatusId,
     invoiceType,
+    amount,
   } = req.body;
-  console.log(req.body);
-
-  return;
 
   const capitalAmountUpdate =
     invoiceType === "Sales"
@@ -176,13 +175,15 @@ const updateInvoice = TryCatch(async (req, res, next) => {
     },
   });
 
+  const discount = parseInt(req.body.discount);
   const data = await prisma.invoice.update({
     where: { id: parseInt(req.params.id) },
     data: {
       paidAmount,
       remainingAmount,
       paymentStatusId,
-      discount: parseInt(req.body.discount),
+      discount: discount,
+      finalAmount: parseInt(amount) - discount,
     },
   });
 
