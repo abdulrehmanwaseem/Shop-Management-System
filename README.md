@@ -1,5 +1,7 @@
 # Shop Management System
 
+![Shop Management System](https://res.cloudinary.com/dgljsrfmk/image/upload/v1727892494/cuqg6gbtknhjxqaueosz.png)
+
 **Note:** This project was initially developed a month ago but is now being pushed to GitHub. It is currently undergoing rigorous testing, with improvements being made on a weekly basis. Bug fixes, new reports, and additional features are being added regularly to enhance the system.
 
 A comprehensive Shop Management System built using the PERN stack (PostgreSQL, Express, React, Node.js).
