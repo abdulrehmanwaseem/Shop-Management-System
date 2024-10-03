@@ -62,12 +62,14 @@ const Dashboard = () => {
           <CardDataStats
             title="Total Purchases"
             total={currencyFormatter.format(
-              data?.data?.totalPurchase.amount || 0
+              data?.data?.totalPurchase.finalAmount || 0
             )}
           ></CardDataStats>
           <CardDataStats
             title="Total Sales"
-            total={currencyFormatter.format(data?.data?.totalSale.amount || 0)}
+            total={currencyFormatter.format(
+              data?.data?.totalSale.finalAmount || 0
+            )}
           ></CardDataStats>
           <CardDataStats
             title="Total Expenses"

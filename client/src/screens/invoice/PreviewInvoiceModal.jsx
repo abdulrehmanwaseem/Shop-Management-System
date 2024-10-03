@@ -21,6 +21,7 @@ const PreviewInvoiceModal = () => {
     particular,
     items,
     discount,
+    finalAmount,
   } = data;
 
   const handlePrint = useReactToPrint({
@@ -107,14 +108,14 @@ const PreviewInvoiceModal = () => {
               <div className="flex justify-between w-full font-bold">
                 <p className="w-[90%] text-right">Discount:</p>{" "}
                 <p className="w-[10%] text-right">
-                  -{currencyFormatter.format(1000)}
+                  -{currencyFormatter.format(discount)}
                 </p>
               </div>
             )}
             <div className="flex justify-between w-full font-bold">
               <p className="w-[90%] text-right">Total Amount:</p>{" "}
               <p className="w-[10%] text-right">
-                {currencyFormatter.format(amount - 1000)}
+                {currencyFormatter.format(finalAmount)}
               </p>
             </div>
           </div>

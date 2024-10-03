@@ -42,7 +42,7 @@ const UpdateInvoiceModal = () => {
       remainingAmount,
       invoiceType: data.invoiceType,
       amountPaid: parseInt(data.remainingAmount) - parseInt(remainingAmount),
-      amount: amount,
+      amount: data.amount,
       paidAmount,
       paymentStatusId,
     }).unwrap();

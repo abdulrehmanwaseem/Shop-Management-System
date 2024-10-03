@@ -31,7 +31,7 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     },
     _sum: {
       remainingAmount: true,
-      amount: true,
+      finalAmount: true,
     },
   });
 
@@ -45,7 +45,7 @@ const getDashboardData = TryCatch(async (req, res, next) => {
       invoiceTypeId: 3,
     },
     _sum: {
-      amount: true,
+      finalAmount: true,
       remainingAmount: true,
       revenue: true,
       discount: true,
