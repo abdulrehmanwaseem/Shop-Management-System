@@ -72,6 +72,13 @@ const Invoice = () => {
       },
     },
     {
+      field: "finalAmount",
+      header: "Final Amount",
+      body: ({ finalAmount }) => {
+        return <span>{currencyFormatter.format(finalAmount)}</span>;
+      },
+    },
+    {
       field: "revenue",
       header: "Revenue",
       body: ({ revenue }) => {
