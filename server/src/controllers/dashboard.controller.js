@@ -32,6 +32,17 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     _sum: {
       remainingAmount: true,
       finalAmount: true,
+      discount: true,
+    },
+  });
+
+  const purchaseDiscountQuery = prisma.invoice.aggregate({
+    where: {
+      isCancelled: false,
+      invoiceTypeId: 2,
+    },
+    _sum: {
+      discount: true,
     },
   });
 
@@ -48,6 +59,15 @@ const getDashboardData = TryCatch(async (req, res, next) => {
       finalAmount: true,
       remainingAmount: true,
       revenue: true,
+    },
+  });
+
+  const salesDiscountQuery = prisma.invoice.aggregate({
+    where: {
+      isCancelled: false,
+      invoiceTypeId: 3,
+    },
+    _sum: {
       discount: true,
     },
   });
@@ -87,9 +107,6 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     },
   });
 
-  // const oneLunarYearAgo = new Date();
-  // oneLunarYearAgo.setDate(oneLunarYearAgo.getDate() - 360);
-
   const [
     inventoryResult,
     lowOnStockCountResult,
@@ -98,6 +115,8 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     revenue,
     expense,
     capital,
+    purchaseDiscount,
+    salesDiscount,
   ] = await Promise.all([
     inventoryQuery,
     lowOnStockCountQuery,
@@ -106,6 +125,8 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     revenueQuery,
     expenseQuery,
     capitalQuery,
+    purchaseDiscountQuery,
+    salesDiscountQuery,
   ]);
 
   const totalInventory = inventoryResult[0]?.totalinventory;
@@ -115,17 +136,16 @@ const getDashboardData = TryCatch(async (req, res, next) => {
   const totalExpense = parseInt(expense._sum.amount) || 0;
   const totalPurchase = purchase._sum;
   const totalSale = sales._sum;
-  const totalSaleDiscount = parseInt(totalSale.discount) || 0;
+  const totalSaleDiscount = parseInt(salesDiscount._sum.discount) || 0;
 
   const totalRevenue =
     parseInt(revenue._sum.revenue || 0) - totalSaleDiscount - totalExpense;
 
   const expectedRevenue = parseInt(totalSale.revenue || 0) - totalSaleDiscount;
 
-  const previousRecievable =
-    44190 - 11500 - 3480 - 500 - 5000 - 4500 - 3000 - 11560 - 2400 - 1000 - 350;
-  // 200 discount
-  const amountInCash = parseInt(capital?.amount || 0) + 2400 + 1000 + 350;
+  const amountInCash =
+    parseInt(capital?.amount || 0) +
+    parseInt(purchaseDiscount._sum.discount || 0);
 
   res.status(200).json({
     status: "Success",
@@ -138,7 +158,6 @@ const getDashboardData = TryCatch(async (req, res, next) => {
       totalRevenue,
       expectedRevenue,
       amountInCash: amountInCash,
-      previousRecievable: previousRecievable - 200 - 500,
     },
   });
 });
