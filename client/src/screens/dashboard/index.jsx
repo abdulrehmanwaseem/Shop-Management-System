@@ -109,6 +109,10 @@ const Dashboard = () => {
               totalCharity > 0 ? totalCharity : 0
             )}
           ></CardDataStats>
+          <CardDataStats
+            title="Charity Contribution"
+            total={currencyFormatter.format(data?.data?.test || 0)}
+          ></CardDataStats>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card className="space-y-4">

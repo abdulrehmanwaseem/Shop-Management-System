@@ -23,25 +23,35 @@ const UpdateInvoiceModal = () => {
   const paymentStatus = methods.watch("paymentStatusId");
 
   const onSubmit = async (formData) => {
-    let { remainingAmount, paidAmount, paymentStatusId } = formData;
+    let { remainingAmount, paidAmount, paymentStatusId, discount } = formData;
+
+    const totalAfterDiscount = parseInt(data.amount) - parseInt(discount);
 
     if (paymentStatus === 1) {
       paidAmount = parseInt(remainingAmount) + parseInt(data.paidAmount);
-      remainingAmount =
-        parseInt(data.remainingAmount) - parseInt(remainingAmount);
 
-      if (parseInt(data.amount) === paidAmount) paymentStatusId = 2;
+      remainingAmount =
+        parseInt(data.remainingAmount) -
+        parseInt(remainingAmount) -
+        parseInt(discount);
+
+      if (totalAfterDiscount === paidAmount) paymentStatusId = 2;
     } else if (paymentStatus === 2) {
       paidAmount = parseInt(data.amount);
       remainingAmount = 0;
     }
+
+    const amountPaid =
+      paymentStatus === 2
+        ? parseInt(data.amount) - parseInt(data.paidAmount)
+        : parseInt(data.remainingAmount) - parseInt(remainingAmount);
 
     await callback({
       id: data.id,
       ...formData,
       remainingAmount,
       invoiceType: data.invoiceType,
-      amountPaid: parseInt(data.remainingAmount) - parseInt(remainingAmount),
+      amountPaid,
       amount: data.amount,
       paidAmount,
       paymentStatusId,
