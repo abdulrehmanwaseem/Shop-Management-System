@@ -14,12 +14,6 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     FROM "Item"
   `;
 
-  const lowOnStockCountQuery = prisma.$queryRaw`
-    SELECT COUNT(*) AS lowOnStockCount
-    FROM "Item"
-    WHERE "stock" <= "lowOnStock"
-  `;
-
   const purchaseQuery = prisma.invoice.aggregate({
     where: {
       date: {
@@ -109,17 +103,15 @@ const getDashboardData = TryCatch(async (req, res, next) => {
 
   const [
     inventoryResult,
-    lowOnStockCountResult,
     purchase,
     sales,
-    revenue,
+    salesRevenue,
     expense,
     capital,
     purchaseDiscount,
     salesDiscount,
   ] = await Promise.all([
     inventoryQuery,
-    lowOnStockCountQuery,
     purchaseQuery,
     salesQuery,
     revenueQuery,
@@ -131,27 +123,27 @@ const getDashboardData = TryCatch(async (req, res, next) => {
 
   const totalInventory = inventoryResult[0]?.totalinventory;
 
-  const lowOnStockCount = Number(lowOnStockCountResult[0]?.lowonstockcount);
-
   const totalExpense = parseInt(expense._sum.amount) || 0;
   const totalPurchase = purchase._sum;
   const totalSale = sales._sum;
-  const totalSaleDiscount = parseInt(salesDiscount._sum.discount) || 0;
+  const totalSaleDiscount = parseInt(salesDiscount._sum.discount || 0);
+  const totalPurchaseDiscount = parseInt(purchaseDiscount._sum.discount || 0);
 
   const totalRevenue =
-    parseInt(revenue._sum.revenue || 0) - totalSaleDiscount - totalExpense;
+    parseInt(salesRevenue._sum.revenue || 0) +
+    totalPurchaseDiscount -
+    totalSaleDiscount -
+    totalExpense;
 
   const expectedRevenue = parseInt(totalSale.revenue || 0) - totalSaleDiscount;
 
   const amountInCash =
-    parseInt(capital?.amount || 0) +
-    parseInt(purchaseDiscount._sum.discount || 0);
+    parseInt(capital?.amount || 0) + totalPurchaseDiscount - totalSaleDiscount;
 
   res.status(200).json({
     status: "Success",
     data: {
       totalInventory,
-      lowOnStockCount,
       totalPurchase,
       totalSale,
       totalExpense,
