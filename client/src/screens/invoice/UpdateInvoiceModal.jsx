@@ -48,13 +48,9 @@ const UpdateInvoiceModal = () => {
     }
 
     const amountPaid =
-      paymentStatus === 2
-        ? parseInt(data.amount) - parseInt(data.paidAmount) // Full payment, didn't subtracted discount
-        : parseInt(data.remainingAmount) - parseInt(remainingAmount); // Partial payment, subtracted discount
-
-    console.log(amountPaid, remainingAmount, data.remainingAmount);
-
-    return;
+      parseInt(data.remainingAmount) -
+      parseInt(discount) -
+      parseInt(remainingAmount);
 
     await callback({
       id: data.id,
