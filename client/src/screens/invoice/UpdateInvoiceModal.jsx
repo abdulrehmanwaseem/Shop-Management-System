@@ -27,24 +27,34 @@ const UpdateInvoiceModal = () => {
 
     const totalAfterDiscount = parseInt(data.amount) - parseInt(discount);
 
+    // When payment status is 'partial' (statusId = 1)
     if (paymentStatus === 1) {
+      // Paid amount is the sum of the new payment and previous payments
       paidAmount = parseInt(remainingAmount) + parseInt(data.paidAmount);
 
+      // Calculate the remaining amount, subtracting discount as well
       remainingAmount =
         parseInt(data.remainingAmount) -
         parseInt(remainingAmount) -
         parseInt(discount);
 
+      // If the full amount after discount is paid, mark it as fully paid
       if (totalAfterDiscount === paidAmount) paymentStatusId = 2;
-    } else if (paymentStatus === 2) {
-      paidAmount = parseInt(data.amount);
-      remainingAmount = 0;
+    }
+    // When payment status is 'paid' (statusId = 2)
+    else if (paymentStatus === 2) {
+      paidAmount = parseInt(data.amount); // Full amount is paid
+      remainingAmount = 0; // No remaining amount
     }
 
     const amountPaid =
       paymentStatus === 2
-        ? parseInt(data.amount) - parseInt(data.paidAmount)
-        : parseInt(data.remainingAmount) - parseInt(remainingAmount);
+        ? parseInt(data.amount) - parseInt(data.paidAmount) // Full payment, didn't subtracted discount
+        : parseInt(data.remainingAmount) - parseInt(remainingAmount); // Partial payment, subtracted discount
+
+    console.log(amountPaid, remainingAmount, data.remainingAmount);
+
+    return;
 
     await callback({
       id: data.id,
