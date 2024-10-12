@@ -2654,3 +2654,31 @@ Server is running at port *4000 in *PRODUCTIONMode
 Database connected successfully
 Server is running at port *4000 in *PRODUCTIONMode
 Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+ApiError: UnAuthorized!
+    at isAuthenticated (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/middlewares/isAuthenticated.js:10:17)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\express\lib\router\index.js:47:12) {
+  statusCode: 401,
+  success: false,
+  errors: []
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
