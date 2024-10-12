@@ -14,7 +14,7 @@ const UpdateInvoiceModal = () => {
   const methods = useForm({
     values: {
       paymentStatusId: data.paymentStatusId,
-      remainingAmount: data.remainingAmount,
+      remainingAmount: 0,
       paidAmount: data.paidAmount,
       discount: 0,
     },
@@ -25,7 +25,8 @@ const UpdateInvoiceModal = () => {
   const onSubmit = async (formData) => {
     let { remainingAmount, paidAmount, paymentStatusId, discount } = formData;
 
-    const totalAfterDiscount = parseInt(data.amount) - parseInt(discount);
+    let finalAmount = parseInt(data.finalAmount);
+    const totalAfterDiscount = finalAmount - parseInt(discount);
 
     // When payment status is 'partial' (statusId = 1)
     if (paymentStatus === 1) {
@@ -40,12 +41,19 @@ const UpdateInvoiceModal = () => {
 
       // If the full amount after discount is paid, mark it as fully paid
       if (totalAfterDiscount === paidAmount) paymentStatusId = 2;
+
+      // If discount is applied, subtract it from the final amount
+      if (discount > 0) {
+        finalAmount -= parseInt(data.discount) + parseInt(discount);
+      }
     }
     // When payment status is 'paid' (statusId = 2)
     else if (paymentStatus === 2) {
-      paidAmount = parseInt(data.amount); // Full amount is paid
+      paidAmount = data.finalAmount; // Full amount is paid
       remainingAmount = 0; // No remaining amount
     }
+
+    console.log(finalAmount);
 
     const amountPaid =
       parseInt(data.remainingAmount) -
@@ -61,6 +69,7 @@ const UpdateInvoiceModal = () => {
       amount: data.amount,
       paidAmount,
       paymentStatusId,
+      finalAmount,
     }).unwrap();
 
     dispatch(closeModal());
@@ -77,6 +86,11 @@ const UpdateInvoiceModal = () => {
             <p className="flex flex-col items-center">
               Total Amount:
               <span>{currencyFormatter.format(data?.amount)}</span>
+            </p>
+            <div className="border-b-2 lg:border-l-2 border-gray-500"></div>
+            <p className="flex flex-col items-center">
+              Discount Amount:
+              <span>{currencyFormatter.format(data?.discount)}</span>
             </p>
             <div className="border-b-2 lg:border-l-2 border-gray-500"></div>
             <p className="flex flex-col items-center">
