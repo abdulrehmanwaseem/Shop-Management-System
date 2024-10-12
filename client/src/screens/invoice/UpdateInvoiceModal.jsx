@@ -44,7 +44,7 @@ const UpdateInvoiceModal = () => {
 
       // If discount is applied, subtract it from the final amount
       if (discount > 0) {
-        finalAmount -= parseInt(data.discount) + parseInt(discount);
+        finalAmount -= parseInt(discount);
       }
     }
     // When payment status is 'paid' (statusId = 2)
@@ -55,11 +55,24 @@ const UpdateInvoiceModal = () => {
 
     console.log(finalAmount);
 
-    const amountPaid =
-      parseInt(data.remainingAmount) -
-      parseInt(discount) -
-      parseInt(remainingAmount);
+    let amountPaid = parseInt(data.remainingAmount) - parseInt(remainingAmount);
 
+    if (paymentStatus === 1 && data.discount > 0) {
+      amountPaid =
+        parseInt(data.remainingAmount) -
+        parseInt(remainingAmount) -
+        parseInt(discount) +
+        parseInt(data.discount);
+    }
+    if (paymentStatus === 1 && discount > 0) {
+      amountPaid =
+        parseInt(data.remainingAmount) -
+        parseInt(remainingAmount) -
+        parseInt(discount);
+    }
+
+    console.log(amountPaid);
+    return;
     await callback({
       id: data.id,
       ...formData,
