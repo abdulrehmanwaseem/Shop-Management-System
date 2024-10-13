@@ -43,7 +43,7 @@ const createInvoice = TryCatch(async (req, res, next) => {
   const { items, ...invoice } = req.body;
 
   try {
-    const transcation = prisma.$transaction(async (prismaClient) => {
+    const transaction = prisma.$transaction(async (prismaClient) => {
       const invoiceTable = await prismaClient.invoice.create({
         data: {
           ...invoice,
@@ -84,10 +84,27 @@ const createInvoice = TryCatch(async (req, res, next) => {
 
         await Promise.all(updateStockPromises);
       }
-      return "Successfully update";
+      let paymentType = "Partial"; // Default to Partial = 1
+      if (invoiceTable.paymentStatusId === 2) {
+        paymentType = "Paid";
+      } else if (invoiceTable.paymentStatusId === 3) {
+        paymentType = "Unpaid";
+      }
+      // Creating Transaction log/history
+      await prismaClient.transactionLog.create({
+        data: {
+          invoiceId: invoiceTable.id,
+          action: "Create",
+          paymentType,
+          amountPaid: invoiceTable.paidAmount,
+          remainingAmount: invoice.amount - invoiceTable.paidAmount,
+        },
+      });
+
+      return "Successfully updated";
     });
     res.status(201).json({
-      status: transcation,
+      data: transaction,
     });
   } catch (error) {
     return next(
@@ -144,6 +161,24 @@ const cancelInvoice = TryCatch(async (req, res, next) => {
       where: { id: invoiceId },
       data: { isCancelled: true },
     });
+
+    let paymentType = "Partial"; // Default to Partial = 1
+    if (data.paymentStatusId === 2) {
+      paymentType = "Paid";
+    } else if (data.paymentStatusId === 3) {
+      paymentType = "Unpaid";
+    }
+
+    await db.transactionLog.create({
+      data: {
+        invoiceId: invoice.id,
+        action: "Cancel",
+        paymentType,
+        amountPaid: invoice.paidAmount,
+        remainingAmount: invoice.remainingAmount,
+        discount: invoice.discount,
+      },
+    });
   });
 
   res.status(200).json({
@@ -195,6 +230,25 @@ const updateInvoice = TryCatch(async (req, res, next) => {
   if (!data) {
     return next(new ApiError("No Entry found with that ID", 404));
   }
+
+  let paymentType = "Partial"; // Default to Partial = 1
+  if (data.paymentStatusId === 2) {
+    paymentType = "Paid";
+  } else if (data.paymentStatusId === 3) {
+    paymentType = "Unpaid";
+  }
+
+  // Create Transaction Log Entry
+  await prisma.transactionLog.create({
+    data: {
+      invoiceId: data.id,
+      action: "Update",
+      paymentType,
+      amountPaid: data.paidAmount,
+      remainingAmount: data.remainingAmount,
+      discount: data.discount,
+    },
+  });
   res.status(200).json({
     status: "Success",
     data,

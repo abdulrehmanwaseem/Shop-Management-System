@@ -30,16 +30,6 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     },
   });
 
-  const purchaseDiscountQuery = prisma.invoice.aggregate({
-    where: {
-      isCancelled: false,
-      invoiceTypeId: 2,
-    },
-    _sum: {
-      discount: true,
-    },
-  });
-
   const salesQuery = prisma.invoice.aggregate({
     where: {
       date: {
@@ -91,38 +81,27 @@ const getDashboardData = TryCatch(async (req, res, next) => {
     },
   });
 
-  const [
-    inventoryResult,
-    purchase,
-    sales,
-    salesRevenue,
-    expense,
-    capital,
-    purchaseDiscount,
-  ] = await Promise.all([
-    inventoryQuery,
-    purchaseQuery,
-    salesQuery,
-    revenueQuery,
-    expenseQuery,
-    capitalQuery,
-    purchaseDiscountQuery,
-  ]);
+  const [inventoryResult, purchase, sales, salesRevenue, expense, capital] =
+    await Promise.all([
+      inventoryQuery,
+      purchaseQuery,
+      salesQuery,
+      revenueQuery,
+      expenseQuery,
+      capitalQuery,
+    ]);
 
   const totalInventory = inventoryResult[0]?.totalinventory;
 
   const totalExpense = parseInt(expense._sum.amount) || 0;
   const totalPurchase = purchase._sum;
   const totalSale = sales._sum;
-  const totalPurchaseDiscount = parseInt(purchaseDiscount._sum.discount || 0);
 
   const totalRevenue = parseInt(salesRevenue._sum.revenue || 0) - totalExpense;
 
-  console.log(totalPurchaseDiscount);
-
   const expectedRevenue = totalSale.revenue || 0;
 
-  const amountInCash = parseInt(capital?.amount || 0) + totalPurchaseDiscount;
+  const amountInCash = parseInt(capital?.amount || 0);
 
   res.status(200).json({
     status: "Success",

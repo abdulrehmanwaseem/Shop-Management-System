@@ -149,7 +149,8 @@ model TransactionLog {
   id             Int       @id @default(autoincrement())
   invoiceId      Int
   invoice        Invoice    @relation(fields: [invoiceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  action         String    
+  action         String   
+  paymentType    String 
   amountPaid     Decimal   
   remainingAmount Decimal   
   discount       Decimal    @default(0)  
