@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import {
+  BadgeDollarSign,
   ClipboardMinus,
   LayoutDashboard,
   ReceiptText,
@@ -81,7 +82,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           {/* <!-- Menu Group --> */}
           <div>
             <h3 className="mb-4 ml-4 font-semibold text-bodydark2 text-xl">
-              Shop Management
+              <img src="/logo3.jpg" className="rounded-2xl w-64 h-22" alt="" />
               <button
                 ref={trigger}
                 className="lg:hidden"
@@ -113,6 +114,20 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   {/* Icon */}
                   <ReceiptText />
                   Invoices
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/transactions"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
+                    pathname.includes("transactions") &&
+                    "bg-graydark dark:bg-meta-4"
+                  }`}
+                >
+                  {/* Icon */}
+                  <BadgeDollarSign />
+                  Transactions
                 </NavLink>
               </li>
               <SidebarLinkGroup

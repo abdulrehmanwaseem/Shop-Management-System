@@ -30,8 +30,8 @@ const DefaultLayout = () => {
           <main>
             <div
               className={`mx-auto ${
-                toggleSidebar && "max-w-screen-2xl"
-              } p-4 md:p-4 2xl:p-7`}
+                toggleSidebar && "max-w-screen-3xl"
+              } p-8s md:p-4 2xl:p-8`}
             >
               <Suspense
                 fallback={

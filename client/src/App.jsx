@@ -21,6 +21,7 @@ const Field = lazy(() => import("./screens/item/field"));
 const Variant = lazy(() => import("./screens/item/variant"));
 const Expense = lazy(() => import("./screens/expense"));
 const Invoice = lazy(() => import("./screens/invoice"));
+const Transaction = lazy(() => import("./screens/transactions"));
 const CreateInvoice = lazy(() => import("./screens/invoice/CreateInvoice"));
 
 const App = () => {
@@ -69,12 +70,11 @@ const App = () => {
               <Route path="/customers" element={<Customer />} />
               <Route path="/companies" element={<Company />} />
               <Route path="/vendors" element={<Vendor />} />
-
               <Route path="/items/home" element={<Item />} />
               <Route path="/items/categories" element={<Category />} />
               <Route path="/items/fields" element={<Field />} />
               <Route path="/items/variants" element={<Variant />} />
-
+              <Route path="/transactions" element={<Transaction />} />
               <Route path="/expenses" element={<Expense />} />
               <Route path="/invoices" element={<Invoice />} />
               <Route path="/invoices/create" element={<CreateInvoice />} />

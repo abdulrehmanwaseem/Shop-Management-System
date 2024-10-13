@@ -14,7 +14,7 @@ import {
   useUpdateInvoiceMutation,
 } from "../../redux/apis/invoicesApi";
 import { OverlayPanel } from "primereact/overlaypanel";
-import { invoiceType, paymentStatus } from "./colors";
+import { invoiceType, paymentStatus } from "../../lib/colors";
 import Card from "../../components/Card";
 import { currencyFormatter } from "../../lib/currencyLogic";
 
