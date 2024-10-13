@@ -114,3 +114,27 @@ export const validateTable = (hotRef) => {
 
   return !isError && !isGridEmpty;
 };
+export const updateInvoiceSchema = (prevRemainingAmount) =>
+  yupResolver(
+    yup.object({
+      paymentStatusId: yup.number().required("Payment Status is required"),
+      discount: yup
+        .number()
+        .min(0, "Discount cannot be negative")
+        .max(
+          prevRemainingAmount - 1,
+          "Discount should be less than the remaining amount"
+        )
+        .typeError("Discount is required")
+        .required("Discount is required"),
+      remainingAmount: yup
+        .number()
+        .min(0, "Remaining amount cannot be negative")
+        .max(
+          prevRemainingAmount - 1,
+          `Remaining amount must be less than ${prevRemainingAmount}`
+        )
+        .typeError("Remaining Amount is required")
+        .required("Remaining Amount is required"),
+    })
+  );

@@ -7,11 +7,13 @@ import { Input, Select } from "../../components/FormElements";
 import { currencyFormatter } from "../../lib/currencyLogic";
 import Card from "../../components/Card";
 import { useGetPaymentStatusQuery } from "../../redux/apis/invoicesApi";
+import { updateInvoiceSchema } from "../../Validations";
 
 const UpdateInvoiceModal = () => {
   const { data, callback } = useSelector((state) => state.modal);
   const { data: paymentStatusData } = useGetPaymentStatusQuery();
   const methods = useForm({
+    resolver: updateInvoiceSchema(data.remainingAmount),
     values: {
       paymentStatusId: data.paymentStatusId,
       remainingAmount: 0,
@@ -25,54 +27,30 @@ const UpdateInvoiceModal = () => {
   const onSubmit = async (formData) => {
     let { remainingAmount, paidAmount, paymentStatusId, discount } = formData;
 
-    let finalAmount = parseInt(data.finalAmount);
-    const totalAfterDiscount = finalAmount - parseInt(discount);
-
+    let amountPaid = 0;
     // When payment status is 'partial' (statusId = 1)
     if (paymentStatus === 1) {
       // Paid amount is the sum of the new payment and previous payments
       paidAmount = parseInt(remainingAmount) + parseInt(data.paidAmount);
 
-      // Calculate the remaining amount, subtracting discount as well
       remainingAmount =
-        parseInt(data.remainingAmount) -
-        parseInt(remainingAmount) -
-        parseInt(discount);
+        parseInt(data.remainingAmount) - parseInt(remainingAmount);
 
-      // If the full amount after discount is paid, mark it as fully paid
-      if (totalAfterDiscount === paidAmount) paymentStatusId = 2;
-
-      // If discount is applied, subtract it from the final amount
-      if (discount > 0) {
-        finalAmount -= parseInt(discount);
-      }
+      amountPaid = parseInt(data.remainingAmount) - parseInt(remainingAmount);
     }
     // When payment status is 'paid' (statusId = 2)
     else if (paymentStatus === 2) {
-      paidAmount = data.finalAmount; // Full amount is paid
-      remainingAmount = 0; // No remaining amount
-    }
+      paidAmount = parseInt(data.finalAmount) - parseInt(discount); // Full amount is paid
+      remainingAmount = 0; // No r  emaining amount
 
-    console.log(finalAmount);
-
-    let amountPaid = parseInt(data.remainingAmount) - parseInt(remainingAmount);
-
-    if (paymentStatus === 1 && data.discount > 0) {
-      amountPaid =
-        parseInt(data.remainingAmount) -
-        parseInt(remainingAmount) -
-        parseInt(discount) +
-        parseInt(data.discount);
-    }
-    if (paymentStatus === 1 && discount > 0) {
       amountPaid =
         parseInt(data.remainingAmount) -
         parseInt(remainingAmount) -
         parseInt(discount);
+    } else {
+      remainingAmount = data.remainingAmount;
     }
 
-    console.log(amountPaid);
-    return;
     await callback({
       id: data.id,
       ...formData,
@@ -82,11 +60,12 @@ const UpdateInvoiceModal = () => {
       amount: data.amount,
       paidAmount,
       paymentStatusId,
-      finalAmount,
+      discount,
     }).unwrap();
 
     dispatch(closeModal());
   };
+
   const filteredOptions =
     data.paymentStatusId === 1
       ? paymentStatusData?.data?.filter((val) => val.id !== 3)
@@ -97,8 +76,8 @@ const UpdateInvoiceModal = () => {
         <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-4">
           <Card className="flex flex-col lg:flex-row gap-2 justify-between font-semibold">
             <p className="flex flex-col items-center">
-              Total Amount:
-              <span>{currencyFormatter.format(data?.amount)}</span>
+              Final Amount:
+              <span>{currencyFormatter.format(data?.finalAmount)}</span>
             </p>
             <div className="border-b-2 lg:border-l-2 border-gray-500"></div>
             <p className="flex flex-col items-center">
@@ -129,16 +108,16 @@ const UpdateInvoiceModal = () => {
               label={"Pay Remaining Amount"}
               name="remainingAmount"
               type="number"
-              maxLimit={data?.remainingAmount}
+              // maxLimit={data?.remainingAmount}
               placeholder="Enter name"
             />
           )}
-          {paymentStatus !== 3 && (
+          {paymentStatus === 2 && (
             <Input
               label={"Discount Amount"}
               name="discount"
               type="number"
-              maxLimit={data?.remainingAmount - 1}
+              // maxLimit={data?.remainingAmount - 1}
               placeholder="Enter name"
             />
           )}
