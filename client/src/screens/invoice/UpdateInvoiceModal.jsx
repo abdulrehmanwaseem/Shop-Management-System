@@ -50,7 +50,6 @@ const UpdateInvoiceModal = () => {
     } else {
       remainingAmount = data.remainingAmount;
     }
-
     await callback({
       id: data.id,
       ...formData,
@@ -61,6 +60,7 @@ const UpdateInvoiceModal = () => {
       paidAmount,
       paymentStatusId,
       discount,
+      revenue: data.revenue,
     }).unwrap();
 
     dispatch(closeModal());

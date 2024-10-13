@@ -158,6 +158,7 @@ const updateInvoice = TryCatch(async (req, res, next) => {
     remainingAmount,
     paymentStatusId,
     invoiceType,
+    revenue,
     amount,
   } = req.body;
   const discount = parseInt(req.body.discount);
@@ -166,6 +167,9 @@ const updateInvoice = TryCatch(async (req, res, next) => {
     invoiceType === "Sales"
       ? { increment: amountPaid }
       : { decrement: amountPaid };
+
+  const substractDiscountFromRevenue =
+    invoiceType === "Sales" ? parseInt(revenue) - discount : 0;
 
   await prisma.capital.update({
     where: {
@@ -183,6 +187,7 @@ const updateInvoice = TryCatch(async (req, res, next) => {
       remainingAmount,
       paymentStatusId,
       discount: discount,
+      revenue: substractDiscountFromRevenue,
       finalAmount: parseInt(amount) - discount,
     },
   });
