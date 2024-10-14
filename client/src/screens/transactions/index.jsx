@@ -1,29 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import moment from "moment";
-import { Edit, Plus, Eye, X, MoreHorizontal } from "lucide-react";
 import { DataTable as Table } from "primereact/datatable";
 import { Column } from "primereact/column";
-import { Button } from "primereact/button";
 import { Tag } from "primereact/tag";
-import { useDispatch } from "react-redux";
-import { openModal } from "../../redux/slice/modal";
-import { Link } from "react-router-dom";
-import {
-  useCancelInvoiceMutation,
-  useGetInvoicesQuery,
-  useUpdateInvoiceMutation,
-} from "../../redux/apis/invoicesApi";
-import { OverlayPanel } from "primereact/overlaypanel";
-import { invoiceType, paymentStatus } from "../../lib/colors";
-import Card from "../../components/Card";
+import { invoiceAction, paymentStatus } from "../../lib/colors";
 import { currencyFormatter } from "../../lib/currencyLogic";
+import { useGetTransactionLogsQuery } from "../../redux/apis/transactionLogsApi";
 
 const Transaction = () => {
-  const { data: invoices } = useGetInvoicesQuery();
-  const [cancelInvoice] = useCancelInvoiceMutation();
-  const [updateInvoice] = useUpdateInvoiceMutation();
-
-  const dispatch = useDispatch();
+  const { data: transactionLogs } = useGetTransactionLogsQuery();
 
   const columns = [
     { field: "id", header: "Id" },
@@ -34,28 +19,33 @@ const Transaction = () => {
         return moment(date).format("DD/MMM/YYYY");
       },
     },
-    { field: "name", header: "Name" },
+    { field: "invoice.name", header: "Name" },
     {
-      field: "paymentStatus",
-      header: "Action",
-      body: (data) => {
+      field: "invoice.paymentStatus.name",
+      header: "Payment Type",
+      body: ({ invoice }) => {
         return (
           <Tag
-            severity={
-              paymentStatus[
-                data?.isCancelled ? "Cancelled" : data.paymentStatus
-              ]
-            }
-            value={data?.isCancelled ? "Cancelled" : data.paymentStatus}
+            severity={paymentStatus[invoice.paymentStatus.name]}
+            value={invoice.paymentStatus.name}
           />
         );
       },
     },
     {
-      field: "paidAmount",
-      header: "Paid Amount",
-      body: ({ paidAmount }) => {
-        return <span>{currencyFormatter.format(paidAmount)}</span>;
+      field: "action",
+      header: "Action",
+      body: (data) => {
+        return (
+          <Tag severity={invoiceAction[data?.action]} value={data?.action} />
+        );
+      },
+    },
+    {
+      field: "amountPaid",
+      header: "Amount Paid",
+      body: ({ amountPaid }) => {
+        return <span>{currencyFormatter.format(amountPaid)}</span>;
       },
     },
     {
@@ -84,7 +74,7 @@ const Transaction = () => {
 
   return (
     <Table
-      value={invoices?.data}
+      value={transactionLogs?.data}
       dataKey="id"
       stateStorage="session"
       stateKey="createInvoice"
@@ -96,14 +86,14 @@ const Transaction = () => {
       size="small"
       stripedRows
       paginator
-      rows={15}
-      rowsPerPageOptions={[5, 15, 25]}
+      rows={30}
+      rowsPerPageOptions={[15, 25, 30]}
       tableStyle={{ minWidth: "50rem" }}
       paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink  CurrentPageReport"
       currentPageReportTemplate="{first} to {last} of {totalRecords}"
       rowClassName="dark:bg-boxdark dark:text-slate-300"
       paginatorClassName="custom-paginator"
-      totalRecords={invoices?.totalRecords}
+      totalRecords={transactionLogs?.totalRecords}
     >
       {columns?.map((col, i) => (
         <Column

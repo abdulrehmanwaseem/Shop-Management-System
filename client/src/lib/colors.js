@@ -10,3 +10,9 @@ export const invoiceType = {
   Purchase: "primary",
   Expense: "info",
 };
+
+export const invoiceAction = {
+  Create: "success",
+  Update: "primary",
+  delete: "danger",
+};

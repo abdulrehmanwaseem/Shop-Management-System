@@ -20,6 +20,7 @@ export const apis = createApi({
     "Categories",
     "Fields",
     "Variants",
+    "TransactionLogs",
   ],
   endpoints: () => ({}),
 });
