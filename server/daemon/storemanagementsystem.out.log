@@ -2724,3 +2724,33 @@ ApiError: UnAuthorized!
 }
 Server is running at port *4000 in *PRODUCTIONMode
 Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{ name: 'Amir Mechanic ', contact1: '', contact2: '', address: '' }
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+{
+  name: 'Zahid Aslam Autos',
+  contact1: '03121310090',
+  contact2: '',
+  address: 'Gari khata'
+}
+{
+  name: 'Umer Nut Bolt ',
+  contact1: '',
+  contact2: '',
+  address: 'Gari khata'
+}
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully

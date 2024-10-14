@@ -163,9 +163,9 @@ const cancelInvoice = TryCatch(async (req, res, next) => {
     });
 
     let paymentType = "Partial"; // Default to Partial = 1
-    if (data.paymentStatusId === 2) {
+    if (invoice.paymentStatusId === 2) {
       paymentType = "Paid";
-    } else if (data.paymentStatusId === 3) {
+    } else if (invoice.paymentStatusId === 3) {
       paymentType = "Unpaid";
     }
 

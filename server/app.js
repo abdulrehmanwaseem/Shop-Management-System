@@ -23,6 +23,7 @@ import { dashboardRouter } from "./src/routes/dashboard.routes.js";
 import { categoryRouter } from "./src/routes/category.routes.js";
 import { fieldRouter } from "./src/routes/field.routes.js";
 import { variantRouter } from "./src/routes/variant.routes.js";
+import { transactionLogRouter } from "./src/routes/transactionLog.routes.js";
 
 //* Setup:
 export const app = express();
@@ -50,6 +51,7 @@ app.use("/api/v1/dashboard", dashboardRouter);
 app.use("/api/v1/categories", categoryRouter);
 app.use("/api/v1/fields", fieldRouter);
 app.use("/api/v1/variants", variantRouter);
+app.use("/api/v1/transactionLogs", transactionLogRouter);
 
 app.use(express.static(join(__dirname, "dist")));
 app.get("*", (req, res) => {
