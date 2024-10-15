@@ -138,6 +138,7 @@ model Invoice {
   remainingAmount Decimal @default(0)
   revenue         Decimal @default(0)
   discount        Decimal @default(0)
+  frieght        Decimal @default(0)
   finalAmount     Decimal 
   items         String    @default("")
   transactionLog  TransactionLog[]
@@ -149,16 +150,15 @@ model TransactionLog {
   id             Int       @id @default(autoincrement())
   invoiceId      Int
   invoice        Invoice    @relation(fields: [invoiceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  action         String   
   paymentType    String 
   amountPaid     Decimal   
   remainingAmount Decimal   
-  discount       Decimal    @default(0)  
   createdAt      DateTime   @default(now())
 }
 
 model Capital {
   id            Int              @id @default(autoincrement())
+  opening       Decimal          @default(0)
   amount        Decimal
   createdAt     DateTime          @default(now())
   updatedAt     DateTime          @updatedAt

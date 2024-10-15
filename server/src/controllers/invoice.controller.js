@@ -24,11 +24,23 @@ const getInvoiceConfig = TryCatch(async (req, res, next) => {
   const { invoiceType } = req.query;
   let data = [];
   if (invoiceType === "1") {
-    data = await prisma.expense.findMany();
+    data = await prisma.expense.findMany({
+      select: {
+        name: true,
+      },
+    });
   } else if (invoiceType === "2") {
-    data = await prisma.vendor.findMany();
+    data = await prisma.vendor.findMany({
+      select: {
+        name: true,
+      },
+    });
   } else if (invoiceType === "3") {
-    data = await prisma.customer.findMany();
+    data = await prisma.customer.findMany({
+      select: {
+        name: true,
+      },
+    });
   } else {
     data = [];
   }
@@ -49,7 +61,10 @@ const createInvoice = TryCatch(async (req, res, next) => {
           ...invoice,
           items: JSON.stringify(items),
           date: new Date(invoice.date),
-          finalAmount: invoice.amount,
+          finalAmount:
+            parseInt(invoice.amount) +
+            parseInt(invoice.frieght) -
+            parseInt(invoice.discount),
         },
       });
 
@@ -94,7 +109,6 @@ const createInvoice = TryCatch(async (req, res, next) => {
       await prismaClient.transactionLog.create({
         data: {
           invoiceId: invoiceTable.id,
-          action: "Create",
           paymentType,
           amountPaid: invoiceTable.paidAmount,
           remainingAmount: invoice.amount - invoiceTable.paidAmount,
@@ -162,22 +176,8 @@ const cancelInvoice = TryCatch(async (req, res, next) => {
       data: { isCancelled: true },
     });
 
-    let paymentType = "Partial"; // Default to Partial = 1
-    if (invoice.paymentStatusId === 2) {
-      paymentType = "Paid";
-    } else if (invoice.paymentStatusId === 3) {
-      paymentType = "Unpaid";
-    }
-
-    await db.transactionLog.create({
-      data: {
-        invoiceId: invoice.id,
-        action: "Cancel",
-        paymentType,
-        amountPaid: invoice.paidAmount,
-        remainingAmount: invoice.remainingAmount,
-        discount: invoice.discount,
-      },
+    await db.transactionLog.deleteMany({
+      where: { invoiceId },
     });
   });
 
@@ -242,11 +242,9 @@ const updateInvoice = TryCatch(async (req, res, next) => {
   await prisma.transactionLog.create({
     data: {
       invoiceId: data.id,
-      action: "Update",
       paymentType,
       amountPaid: data.paidAmount,
       remainingAmount: data.remainingAmount,
-      discount: data.discount,
     },
   });
   res.status(200).json({

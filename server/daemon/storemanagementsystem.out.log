@@ -2754,3 +2754,222 @@ Server is running at port *4000 in *PRODUCTIONMode
 Server is running at port *4000 in *PRODUCTIONMode
 Server is running at port *4000 in *PRODUCTIONMode
 Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+[
+  {
+    id: 6,
+    invoiceId: 127,
+    paymentType: 'Unpaid',
+    amountPaid: 0,
+    remainingAmount: 650,
+    createdAt: 2024-10-13T19:25:06.109Z,
+    invoice: { name: 'Umer Nut Bolt ' }
+  }
+]
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully
+Server is running at port *4000 in *PRODUCTIONMode
+Database connected successfully

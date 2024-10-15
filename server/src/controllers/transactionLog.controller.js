@@ -8,15 +8,10 @@ const getTransactionLogs = TryCatch(async (req, res, next) => {
         invoice: {
           select: {
             name: true,
-            paymentStatus: {
-              select: {
-                name: true,
-              },
-            },
           },
         },
       },
-      orderBy: { id: "asc" },
+      orderBy: { invoiceId: "asc" },
     }),
     prisma.transactionLog.count(),
   ]);
@@ -28,4 +23,51 @@ const getTransactionLogs = TryCatch(async (req, res, next) => {
   });
 });
 
-export { getTransactionLogs };
+const getTransactionLogsByFilter = TryCatch(async (req, res, next) => {
+  const { id, name } = req.query;
+
+  const filters = {
+    OR: [
+      name
+        ? {
+            invoice: {
+              name: {
+                contains: name,
+                mode: "insensitive",
+              },
+            },
+          }
+        : {},
+    ],
+  };
+
+  if (id) {
+    filters.OR.push({
+      invoiceId: parseInt(id),
+    });
+  }
+
+  const [data, totalRecords] = await Promise.all([
+    prisma.transactionLog.findMany({
+      include: {
+        invoice: {
+          select: {
+            name: true,
+          },
+        },
+      },
+      where: filters,
+      orderBy: { invoiceId: "asc" },
+    }),
+    prisma.transactionLog.count(),
+  ]);
+  console.log(data);
+
+  res.status(200).json({
+    status: "Success",
+    totalRecords,
+    data,
+  });
+});
+
+export { getTransactionLogs, getTransactionLogsByFilter };
