@@ -1,5 +1,6 @@
 import { apis } from "./baseApi";
 import onQueryStarted from "../../utils/handleApisError";
+import queryStringGenerator from "../../utils/queryStringGenerator";
 
 const transactionLogsApi = apis.injectEndpoints({
   endpoints: (builder) => ({
@@ -10,8 +11,18 @@ const transactionLogsApi = apis.injectEndpoints({
       onQueryStarted,
       providesTags: ["TransactionLogs"],
     }),
+    getTransactionLogsByFilter: builder.query({
+      query: (filter) => ({
+        url: queryStringGenerator("transactionLogs/filter", filter),
+      }),
+      onQueryStarted,
+      providesTags: ["TransactionLogs"],
+    }),
   }),
   overrideExisting: false,
 });
 
-export const { useGetTransactionLogsQuery } = transactionLogsApi;
+export const {
+  useGetTransactionLogsQuery,
+  useLazyGetTransactionLogsByFilterQuery,
+} = transactionLogsApi;

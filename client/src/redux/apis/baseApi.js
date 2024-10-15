@@ -8,7 +8,7 @@ export const apis = createApi({
     baseUrl,
     credentials: "include",
   }),
-  keepUnusedDataFor: 0.01,
+  keepUnusedDataFor: 0.000001,
   tagTypes: [
     "Auth",
     "Customers",

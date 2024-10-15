@@ -29,28 +29,26 @@ const VendorModal = () => {
     }
   };
   return (
-    <div>
-      <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-4">
-          <Input label={"Name"} name="name" placeholder="Enter name" />
-          <Input
-            label={"Contact-1"}
-            name="contact1"
-            type="number"
-            placeholder="Enter contact-1"
-          />
-          <Input
-            label={"Contact-2 (optional)"}
-            name="contact2"
-            type="number"
-            placeholder="Enter contact-2"
-          />
-          <Input label={"Address"} name="address" placeholder="Enter address" />
+    <FormProvider {...methods}>
+      <form onSubmit={methods.handleSubmit(onSubmit)} className="space-y-4">
+        <Input label={"Name"} name="name" placeholder="Enter name" />
+        <Input
+          label={"Contact-1"}
+          name="contact1"
+          type="number"
+          placeholder="Enter contact-1"
+        />
+        <Input
+          label={"Contact-2 (optional)"}
+          name="contact2"
+          type="number"
+          placeholder="Enter contact-2"
+        />
+        <Input label={"Address"} name="address" placeholder="Enter address" />
 
-          <Button label="Submit" raised className="w-full py-3" size="small" />
-        </form>
-      </FormProvider>
-    </div>
+        <Button label="Submit" raised className="w-full py-3" size="small" />
+      </form>
+    </FormProvider>
   );
 };
 

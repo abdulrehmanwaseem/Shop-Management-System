@@ -34,6 +34,10 @@ const CreateInvoice = () => {
 
   const methods = useForm({
     resolver: invoiceSchema(totalAmount),
+    defaultValues: {
+      discount: 0,
+      paidAmount: 0,
+    },
   });
 
   const invoiceType = methods.watch("invoiceTypeId");
@@ -257,108 +261,120 @@ const CreateInvoice = () => {
   };
 
   return (
-    <div>
-      <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(onTableSubmit)}>
-          <div className="space-y-4 ">
-            <Card className={"space-y-4 shadow-lg"}>
-              <h1 className="text-lg font-semibold">Invoice</h1>
-              <hr />
-              <div className="flex flex-col lg:flex-row items-center gap-4">
-                <Select
-                  label={"Invoice Type"}
-                  name="invoiceTypeId"
-                  placeholder="Enter invoice name"
-                  options={invoiceTypeData?.data}
-                  filter={false}
-                />
-                <DatePicker label={"Invoice Date"} name="date" />
-                <Select
-                  label={"Invoice Name"}
-                  name="name"
-                  value="name"
-                  getKey="name"
-                  isDisable={!invoiceType}
-                  placeholder="Enter invoice name"
-                  options={invoiceConfigData?.data}
-                />
-              </div>
-              <TextArea
-                label={"Particular"}
-                name="particular"
-                placeholder="Enter invoice particular"
+    <FormProvider {...methods}>
+      <form onSubmit={methods.handleSubmit(onTableSubmit)}>
+        <div className="space-y-4 ">
+          <Card className={"space-y-4 shadow-lg"}>
+            <h1 className="text-lg font-semibold">Invoice</h1>
+            <hr />
+            <div className="flex flex-col lg:flex-row items-center gap-4">
+              <Select
+                label={"Invoice Type"}
+                name="invoiceTypeId"
+                placeholder="Enter invoice name"
+                options={invoiceTypeData?.data}
+                filter={false}
               />
-            </Card>
-            <Card className={"space-y-4 max-h-fit shadow-lg"}>
-              <span className="flex justify-between items-center">
-                <h1 className="text-lg font-semibold">Invoice Details</h1>
+              <DatePicker label={"Invoice Date"} name="date" />
+              <Select
+                label={"Invoice Name"}
+                name="name"
+                value="name"
+                isDisable={!invoiceType}
+                placeholder="Enter invoice name"
+                options={invoiceConfigData?.data}
+              />
+            </div>
+            <TextArea
+              label={"Particular"}
+              name="particular"
+              placeholder="Enter invoice particular"
+            />
+          </Card>
+          <Card className={"space-y-4 max-h-fit shadow-lg"}>
+            <span className="flex justify-between items-center">
+              <h1 className="text-lg font-semibold">Invoice Details</h1>
 
-                {!invoiceType && (
-                  <p className="text-red-500 font-medium">
-                    Please select an "invoice type" to enable the table.
-                  </p>
-                )}
+              {!invoiceType && (
+                <p className="text-red-500 font-medium">
+                  Please select an "invoice type" to enable the table.
+                </p>
+              )}
+            </span>
+            <hr />
+
+            <HotTable
+              data={tableData}
+              ref={hotRef}
+              beforeChange={beforeChange}
+              afterChange={afterChange}
+              colHeaders={colHeaders}
+              columns={columns}
+              readOnly={!invoiceType}
+              stretchH="all"
+              beforeRefreshDimensions={() => false}
+              height={`${Math.min(tableData.length, 10) * 24 + 24}px`}
+              contextMenu={true}
+              manualColumnResize={true}
+              manualRowResize={true}
+              rowHeaders={true}
+              minRows={10}
+              minSpareRows={1}
+              licenseKey="non-commercial-and-evaluation"
+            />
+          </Card>
+          <Card className={"space-y-4 shadow-lg"}>
+            <div className="flex items-center justify-between">
+              <h1 className="text-lg font-semibold">Payment Details</h1>
+              <span className="text-lg font-semibold">
+                Total Amount: {currencyFormatter.format(totalAmount)}
               </span>
-              <hr />
+            </div>
+            <hr />
+            <div className="flex flex-col lg:flex-row gap-4">
+              <Input
+                label={"Frieght Amount"}
+                name="frieght"
+                type="number"
+                maxLimit={totalAmount - 1}
+                placeholder="Enter frieght amount"
+              />
+              <Input
+                label={"Discount Amount"}
+                name="discount"
+                type="number"
+                maxLimit={totalAmount - 1}
+                placeholder="Enter discount amount"
+              />
+              <Select
+                label={"Payment Status"}
+                name="paymentStatusId"
+                placeholder="Enter invoice name"
+                options={paymentStatusData?.data}
+                filter={false}
+              />
 
-              <HotTable
-                data={tableData}
-                ref={hotRef}
-                beforeChange={beforeChange}
-                afterChange={afterChange}
-                colHeaders={colHeaders}
-                columns={columns}
-                readOnly={!invoiceType}
-                stretchH="all"
-                beforeRefreshDimensions={() => false}
-                height={`${Math.min(tableData.length, 10) * 24 + 24}px`}
-                contextMenu={true}
-                manualColumnResize={true}
-                manualRowResize={true}
-                rowHeaders={true}
-                minRows={10}
-                minSpareRows={1}
-                licenseKey="non-commercial-and-evaluation"
-              />
-            </Card>
-            <Card className={"space-y-4 shadow-lg"}>
-              <div className="flex items-center justify-between">
-                <h1 className="text-lg font-semibold">Payment Details</h1>
-                <span className="text-lg font-semibold">
-                  Total Amount: {currencyFormatter.format(totalAmount)}
-                </span>
-              </div>
-              <hr />
-              <div className="flex flex-col lg:flex-row gap-4">
-                <Select
-                  label={"Payment Status"}
-                  name="paymentStatusId"
-                  placeholder="Enter invoice name"
-                  options={paymentStatusData?.data}
-                  filter={false}
+              {paymentStatus === 1 ? (
+                <Input
+                  label={"Paid Amount"}
+                  name="paidAmount"
+                  type="number"
+                  maxLimit={totalAmount - 1}
+                  placeholder="Enter paid amount"
                 />
-                {paymentStatus === 1 && totalAmount !== 0 ? (
-                  <Input
-                    label={"Paid Amount"}
-                    name="paidAmount"
-                    type="number"
-                    maxLimit={totalAmount - 1}
-                    placeholder="Enter paid amount"
-                  />
-                ) : null}
-              </div>
-              <Button
-                label="Submit"
-                raised
-                className="w-full"
-                size="small"
-                type="submit"
-              />
-            </Card>
-          </div>
-        </form>
-      </FormProvider>
-    </div>
+              ) : null}
+            </div>
+            <Button
+              label="Submit"
+              raised
+              className="w-full"
+              size="small"
+              type="submit"
+            />
+          </Card>
+        </div>
+      </form>
+    </FormProvider>
   );
 };
 export default CreateInvoice;

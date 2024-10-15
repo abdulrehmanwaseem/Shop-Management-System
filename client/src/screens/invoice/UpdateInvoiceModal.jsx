@@ -41,7 +41,7 @@ const UpdateInvoiceModal = () => {
     // When payment status is 'paid' (statusId = 2)
     else if (paymentStatus === 2) {
       paidAmount = parseInt(data.finalAmount) - parseInt(discount); // Full amount is paid
-      remainingAmount = 0; // No r  emaining amount
+      remainingAmount = 0; // No remaining amount
 
       amountPaid =
         parseInt(data.remainingAmount) -
@@ -112,7 +112,7 @@ const UpdateInvoiceModal = () => {
               placeholder="Enter name"
             />
           )}
-          {paymentStatus === 2 && (
+          {paymentStatus === 2 && parseInt(data.discount) === 0 ? (
             <Input
               label={"Discount Amount"}
               name="discount"
@@ -120,7 +120,7 @@ const UpdateInvoiceModal = () => {
               // maxLimit={data?.remainingAmount - 1}
               placeholder="Enter name"
             />
-          )}
+          ) : null}
           <Button label="Submit" raised className="w-full py-3" size="small" />
         </form>
       </FormProvider>

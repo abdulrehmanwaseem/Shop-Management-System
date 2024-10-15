@@ -14,5 +14,4 @@ export const invoiceType = {
 export const invoiceAction = {
   Create: "success",
   Update: "primary",
-  delete: "danger",
 };

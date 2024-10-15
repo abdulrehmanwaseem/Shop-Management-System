@@ -51,7 +51,7 @@ const Dashboard = () => {
               label="Filter"
               raised
               size="small"
-              className="w-24"
+              className="w-26"
               type="submit"
             />
           </form>
