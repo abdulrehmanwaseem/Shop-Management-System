@@ -41,8 +41,19 @@ const getInvoiceConfig = TryCatch(async (req, res, next) => {
         name: true,
       },
     });
-  } else {
-    data = [];
+  } else if (invoiceType === "logs") {
+    const customer = prisma.customer.findMany({
+      select: {
+        name: true,
+      },
+    });
+    const vendor = prisma.vendor.findMany({
+      select: {
+        name: true,
+      },
+    });
+    const [customerData, vendorData] = await Promise.all([customer, vendor]);
+    data = [...customerData, ...vendorData];
   }
 
   res.status(201).json({

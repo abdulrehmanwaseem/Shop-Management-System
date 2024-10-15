@@ -24,34 +24,36 @@ const getTransactionLogs = TryCatch(async (req, res, next) => {
 });
 
 const getTransactionLogsByFilter = TryCatch(async (req, res, next) => {
-  const { invoiceId, name } = req.query;
-  let filters = {};
-
-  if (invoiceId) {
-    filters = {
-      invoiceId: parseInt(invoiceId),
-    };
-  } else if (name) {
-    filters = {
-      invoice: {
-        name: {
-          contains: name,
-          mode: "insensitive",
-        },
-      },
-    };
-  }
-
+  const { invoiceId = 0, name = "" } = req.query;
   const [data, totalRecords] = await Promise.all([
     prisma.transactionLog.findMany({
+      where: {
+        OR: [
+          {
+            invoice: {
+              name: {
+                startsWith: name,
+                endsWith: name,
+              },
+            },
+          },
+          {
+            invoiceId: parseInt(invoiceId),
+          },
+        ],
+      },
       include: {
         invoice: {
           select: {
             name: true,
+            invoiceType: {
+              select: {
+                name: true,
+              },
+            },
           },
         },
       },
-      where: filters,
       orderBy: { invoiceId: "asc" },
     }),
     prisma.transactionLog.count(),

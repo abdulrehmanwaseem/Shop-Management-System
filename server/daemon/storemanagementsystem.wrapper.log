@@ -5884,3 +5884,51 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
 2024-10-15 11:19:42 - Send SIGINT 7904
 2024-10-15 11:19:42 - SIGINT to 7904 failed - Killing as fallback
 2024-10-15 11:19:42 - Finished storemanagementsystem.exe
+2024-10-15 14:55:45 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\server.js" --scriptoptions= --log "Store Management System wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-10-15 14:55:45 - Started 7756
+2024-10-15 15:45:50 - Stopping storemanagementsystem.exe
+2024-10-15 15:45:50 - ProcessKill 7756
+2024-10-15 15:45:51 - Found child process: 7828 Name: conhost.exe
+2024-10-15 15:45:51 - Found child process: 8804 Name: node.exe
+2024-10-15 15:45:51 - Stopping process 7828
+2024-10-15 15:45:51 - Send SIGINT 7828
+2024-10-15 15:45:51 - SIGINT to 7828 failed - Killing as fallback
+2024-10-15 15:45:51 - Stopping process 8804
+2024-10-15 15:45:51 - Send SIGINT 8804
+2024-10-15 15:45:51 - SIGINT to 8804 failed - Killing as fallback
+2024-10-15 15:45:51 - Stopping process 7756
+2024-10-15 15:45:51 - Send SIGINT 7756
+2024-10-15 15:45:51 - SIGINT to 7756 failed - Killing as fallback
+2024-10-15 15:45:51 - Finished storemanagementsystem.exe
+2024-10-15 20:32:44 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\server.js" --scriptoptions= --log "Store Management System wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-10-15 20:32:44 - Started 7352
+2024-10-15 20:40:14 - Stopping storemanagementsystem.exe
+2024-10-15 20:40:14 - ProcessKill 7352
+2024-10-15 20:40:15 - Shutdown exception
+Message:Class not registered
+
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2024-10-15 20:40:51 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\server.js" --scriptoptions= --log "Store Management System wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-10-15 20:40:51 - Started 8144
+2024-10-15 21:15:19 - Stopping storemanagementsystem.exe
+2024-10-15 21:15:19 - ProcessKill 8144
+2024-10-15 21:15:19 - Found child process: 8168 Name: conhost.exe
+2024-10-15 21:15:19 - Found child process: 9156 Name: node.exe
+2024-10-15 21:15:20 - Stopping process 8168
+2024-10-15 21:15:20 - Send SIGINT 8168
+2024-10-15 21:15:20 - SIGINT to 8168 failed - Killing as fallback
+2024-10-15 21:15:20 - Stopping process 9156
+2024-10-15 21:15:20 - Send SIGINT 9156
+2024-10-15 21:15:20 - SIGINT to 9156 failed - Killing as fallback
+2024-10-15 21:15:20 - Stopping process 8144
+2024-10-15 21:15:20 - Send SIGINT 8144
+2024-10-15 21:15:20 - SIGINT to 8144 failed - Killing as fallback
+2024-10-15 21:15:20 - Finished storemanagementsystem.exe

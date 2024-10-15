@@ -126,6 +126,10 @@ model PaymentStatus {
 model Invoice {
   id            Int           @id @default(autoincrement())
   name          String
+
+  partyId       Int?
+  party         Party?     @relation(fields: [partyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
   amount        Decimal
   invoiceTypeId Int
   invoiceType   InvoiceType   @relation(fields: [invoiceTypeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
@@ -162,4 +166,22 @@ model Capital {
   amount        Decimal
   createdAt     DateTime          @default(now())
   updatedAt     DateTime          @updatedAt
+}
+
+model Party {
+  id        Int      @id @default(autoincrement())
+  name      String
+  type      PartyType 
+  contact1  String?
+  contact2  String?
+  address   String?
+  invoices  Invoice[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+enum PartyType {
+  CUSTOMER
+  VENDOR
+  EXPENSE
 }
