@@ -24,27 +24,22 @@ const getTransactionLogs = TryCatch(async (req, res, next) => {
 });
 
 const getTransactionLogsByFilter = TryCatch(async (req, res, next) => {
-  const { id, name } = req.query;
+  const { invoiceId, name } = req.query;
+  let filters = {};
 
-  const filters = {
-    OR: [
-      name
-        ? {
-            invoice: {
-              name: {
-                contains: name,
-                mode: "insensitive",
-              },
-            },
-          }
-        : {},
-    ],
-  };
-
-  if (id) {
-    filters.OR.push({
-      invoiceId: parseInt(id),
-    });
+  if (invoiceId) {
+    filters = {
+      invoiceId: parseInt(invoiceId),
+    };
+  } else if (name) {
+    filters = {
+      invoice: {
+        name: {
+          contains: name,
+          mode: "insensitive",
+        },
+      },
+    };
   }
 
   const [data, totalRecords] = await Promise.all([
