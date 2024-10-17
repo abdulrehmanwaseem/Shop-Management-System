@@ -95,10 +95,16 @@ const getAll = (Model, populate = null, transformKeys = []) =>
     });
   });
 
-const createOne = (Model) =>
+const createOne = (Model, type = null) =>
   TryCatch(async (req, res, next) => {
-    console.log(req.body);
-    const data = await Model.create({ data: req.body });
+    const dataToCreate = {
+      ...req.body,
+      ...(type && { type }),
+    };
+
+    const data = await Model.create({
+      data: dataToCreate,
+    });
 
     res.status(201).json({
       status: "Success",
@@ -136,4 +142,23 @@ const deleteOne = (Model) =>
     });
   });
 
-export { getAll, createOne, updateOne, deleteOne };
+const getParties = (Model, type = "") =>
+  TryCatch(async (req, res, next) => {
+    const [data, totalRecords] = await Promise.all([
+      Model.findMany({
+        where: {
+          type,
+        },
+        orderBy: { id: "asc" },
+      }),
+      Model.count(),
+    ]);
+
+    res.status(200).json({
+      status: "Success",
+      totalRecords,
+      data,
+    });
+  });
+
+export { getAll, getParties, createOne, updateOne, deleteOne };

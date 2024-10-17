@@ -4,11 +4,12 @@ import {
   createOne,
   deleteOne,
   updateOne,
+  getParties,
 } from "../utils/crudFunctions.js";
 
-const getCustomers = getAll(prisma.customer);
-const createCustomer = createOne(prisma.customer);
-const updateCustomer = updateOne(prisma.customer);
-const deleteCustomer = deleteOne(prisma.customer);
+const getCustomers = getParties(prisma.party, "CUSTOMER");
+const createCustomer = createOne(prisma.party, "CUSTOMER");
+const updateCustomer = updateOne(prisma.party);
+const deleteCustomer = deleteOne(prisma.party);
 
 export { getCustomers, createCustomer, updateCustomer, deleteCustomer };

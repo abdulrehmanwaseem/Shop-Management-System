@@ -6000,3 +6000,35 @@ Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInter
 2024-10-17 11:56:03 - Send SIGINT 10788
 2024-10-17 11:56:03 - SIGINT to 10788 failed - Killing as fallback
 2024-10-17 11:56:03 - Finished storemanagementsystem.exe
+2024-10-17 19:06:42 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\server.js" --scriptoptions= --log "Store Management System wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-10-17 19:06:42 - Started 7960
+2024-10-17 19:12:03 - Stopping storemanagementsystem.exe
+2024-10-17 19:12:03 - ProcessKill 7960
+2024-10-17 19:12:04 - Found child process: 8336 Name: conhost.exe
+2024-10-17 19:12:04 - Found child process: 9072 Name: node.exe
+2024-10-17 19:12:04 - Stopping process 8336
+2024-10-17 19:12:04 - Send SIGINT 8336
+2024-10-17 19:12:04 - SIGINT to 8336 failed - Killing as fallback
+2024-10-17 19:12:04 - Stopping process 9072
+2024-10-17 19:12:04 - Send SIGINT 9072
+2024-10-17 19:12:04 - SIGINT to 9072 failed - Killing as fallback
+2024-10-17 19:12:04 - Stopping process 7960
+2024-10-17 19:12:04 - Send SIGINT 7960
+2024-10-17 19:12:04 - SIGINT to 7960 failed - Killing as fallback
+2024-10-17 19:12:04 - Finished storemanagementsystem.exe
+2024-10-17 20:19:20 - Starting C:\Program Files\nodejs\node.exe  --harmony "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\node-windows\lib\wrapper.js" --file "C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\server.js" --scriptoptions= --log "Store Management System wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2024-10-17 20:19:20 - Started 8040
+2024-10-17 20:37:00 - Stopping storemanagementsystem.exe
+2024-10-17 20:37:00 - ProcessKill 8040
+2024-10-17 20:37:00 - Found child process: 8180 Name: conhost.exe
+2024-10-17 20:37:00 - Found child process: 8776 Name: node.exe
+2024-10-17 20:37:00 - Stopping process 8180
+2024-10-17 20:37:00 - Send SIGINT 8180
+2024-10-17 20:37:00 - SIGINT to 8180 failed - Killing as fallback
+2024-10-17 20:37:00 - Stopping process 8776
+2024-10-17 20:37:00 - Send SIGINT 8776
+2024-10-17 20:37:00 - SIGINT to 8776 failed - Killing as fallback
+2024-10-17 20:37:00 - Stopping process 8040
+2024-10-17 20:37:00 - Send SIGINT 8040
+2024-10-17 20:37:00 - SIGINT to 8040 failed - Killing as fallback
+2024-10-17 20:37:00 - Finished storemanagementsystem.exe

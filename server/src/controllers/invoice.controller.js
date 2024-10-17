@@ -6,6 +6,11 @@ import { deleteOne, getAll } from "../utils/crudFunctions.js";
 const getInvoices = getAll(
   prisma.invoice,
   {
+    party: {
+      select: {
+        name: true,
+      },
+    },
     invoiceType: {
       select: {
         name: true,
@@ -17,45 +22,54 @@ const getInvoices = getAll(
       },
     },
   },
-  ["invoiceType", "paymentStatus"]
+  ["invoiceType", "paymentStatus", "party"]
 );
 
 const getInvoiceConfig = TryCatch(async (req, res, next) => {
   const { invoiceType } = req.query;
   let data = [];
   if (invoiceType === "1") {
-    data = await prisma.expense.findMany({
+    data = await prisma.party.findMany({
+      where: {
+        type: "EXPENSE",
+      },
       select: {
+        id: true,
         name: true,
       },
     });
   } else if (invoiceType === "2") {
-    data = await prisma.vendor.findMany({
+    data = await prisma.party.findMany({
+      where: {
+        type: "VENDOR",
+      },
       select: {
+        id: true,
         name: true,
       },
     });
   } else if (invoiceType === "3") {
-    data = await prisma.customer.findMany({
+    data = await prisma.party.findMany({
+      where: {
+        type: "CUSTOMER",
+      },
       select: {
+        id: true,
         name: true,
       },
     });
   } else if (invoiceType === "logs") {
-    const customer = prisma.customer.findMany({
+    data = await prisma.party.findMany({
+      where: {
+        type: {
+          not: "EXPENSE",
+        },
+      },
       select: {
         name: true,
       },
     });
-    const vendor = prisma.vendor.findMany({
-      select: {
-        name: true,
-      },
-    });
-    const [customerData, vendorData] = await Promise.all([customer, vendor]);
-    data = [...customerData, ...vendorData];
   }
-
   res.status(201).json({
     status: "Success",
     data,
@@ -70,6 +84,7 @@ const createInvoice = TryCatch(async (req, res, next) => {
       const invoiceTable = await prismaClient.invoice.create({
         data: {
           ...invoice,
+          name: "test",
           items: JSON.stringify(items),
           date: new Date(invoice.date),
           finalAmount: invoice.finalAmount,

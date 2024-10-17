@@ -4,11 +4,12 @@ import {
   createOne,
   deleteOne,
   updateOne,
+  getParties,
 } from "../utils/crudFunctions.js";
 
-const getExpenses = getAll(prisma.expense);
-const createExpense = createOne(prisma.expense);
-const updateExpense = updateOne(prisma.expense);
-const deleteExpense = deleteOne(prisma.expense);
+const getExpenses = getParties(prisma.party, "EXPENSE");
+const createExpense = createOne(prisma.party, "EXPENSE");
+const updateExpense = updateOne(prisma.party);
+const deleteExpense = deleteOne(prisma.party);
 
 export { getExpenses, createExpense, updateExpense, deleteExpense };

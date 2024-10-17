@@ -123,60 +123,67 @@ model PaymentStatus {
   updatedAt     DateTime          @updatedAt
 }
 
-model Invoice {
-  id            Int           @id @default(autoincrement())
-  name          String
-  amount        Decimal
-  invoiceTypeId Int
-  invoiceType   InvoiceType   @relation(fields: [invoiceTypeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  paymentStatusId Int
-  paymentStatus PaymentStatus @relation(fields: [paymentStatusId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  paidAmount    Decimal @default(0)
-  particular    String
-  date          DateTime
-  isCancelled   Boolean @default(false)
-  remainingAmount Decimal @default(0)
-  revenue         Decimal @default(0)
-  discount        Decimal @default(0)
-  freight        Decimal @default(0)
-  finalAmount     Decimal 
-  items         String    @default("")
-  transactionLog  TransactionLog[]
-  createdAt     DateTime      @default(now())
-  updatedAt     DateTime      @updatedAt
-}
+  model Invoice {
+    id          Int      @id @default(autoincrement())
+    name        String
+    partyId     Int?    
+    party       Party?     @relation(fields: [partyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  
+    amount        Decimal
+    invoiceTypeId Int
+    invoiceType   InvoiceType   @relation(fields: [invoiceTypeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+    paymentStatusId Int
+    paymentStatus PaymentStatus @relation(fields: [paymentStatusId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+    paidAmount    Decimal @default(0)
+    particular    String
+    date          DateTime
+    isCancelled   Boolean @default(false)
+    remainingAmount Decimal @default(0)
+    revenue         Decimal @default(0)
+    discount        Decimal @default(0)
+    freight        Decimal @default(0)
+    finalAmount     Decimal 
+    items         String    @default("")
+    transactionLog  TransactionLog[]
+    createdAt     DateTime      @default(now())
+    updatedAt     DateTime      @updatedAt
+  }
 
-model TransactionLog {
-  id             Int       @id @default(autoincrement())
-  invoiceId      Int
-  invoice        Invoice    @relation(fields: [invoiceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  paymentType    String 
-  amountPaid     Decimal   
-  remainingAmount Decimal   
-  createdAt      DateTime   @default(now())
-}
+  model TransactionLog {
+    id             Int       @id @default(autoincrement())
+    invoiceId      Int
+    invoice        Invoice    @relation(fields: [invoiceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+    paymentType    String 
+    amountPaid     Decimal   
+    remainingAmount Decimal   
+    createdAt      DateTime   @default(now())
+  }
 
-model Capital {
-  id            Int              @id @default(autoincrement())
-  opening       Decimal          @default(0)
-  amount        Decimal
-  createdAt     DateTime          @default(now())
-  updatedAt     DateTime          @updatedAt
-}
+  model Capital {
+    id            Int              @id @default(autoincrement())
+    opening       Decimal          @default(0)
+    amount        Decimal
+    createdAt     DateTime          @default(now())
+    updatedAt     DateTime          @updatedAt
+  }
 
-model Party {
-  id        Int      @id @default(autoincrement())
-  name      String
-  type      PartyType 
-  contact1  String?
-  contact2  String?
-  address   String?
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-}
+  model Party {
+    id        Int      @id @default(autoincrement())
+    name      String
+    type      PartyType 
+    contact1  String?
+    contact2  String?
+    address   String?
 
-enum PartyType {
-  CUSTOMER
-  VENDOR
-  EXPENSE
-}
+    invoice   Invoice[]
+    createdAt DateTime  @default(now())
+    updatedAt DateTime  @updatedAt
+
+    @@unique([name, type])
+  }
+
+  enum PartyType {
+    CUSTOMER
+    VENDOR
+    EXPENSE
+  }
