@@ -24,6 +24,7 @@ import {
 } from "../../redux/apis/invoicesApi";
 import { useGetItemsQuery } from "../../redux/apis/itemsApi";
 import { invoiceSchema } from "../../Validations";
+import { Divider } from "primereact/divider";
 
 const CreateInvoice = () => {
   const [tableData] = useState([]);
@@ -37,11 +38,14 @@ const CreateInvoice = () => {
     defaultValues: {
       discount: 0,
       paidAmount: 0,
+      freight: 0,
     },
   });
 
   const invoiceType = methods.watch("invoiceTypeId");
   const paymentStatus = methods.watch("paymentStatusId");
+  const freight = methods.watch("freight");
+  const discount = methods.watch("discount");
 
   const { data: invoiceTypeData } = useGetInvoicesTypeQuery();
   const { data: paymentStatusData } = useGetPaymentStatusQuery();
@@ -158,26 +162,28 @@ const CreateInvoice = () => {
       }
 
       let { remainingAmount, paidAmount } = formData;
+      let finalAmount = totalAmount + parseInt(freight) - parseInt(discount);
 
       if (paymentStatus === 1) {
-        remainingAmount = totalAmount - (paidAmount || 0);
+        remainingAmount = finalAmount - (paidAmount || 0);
         paidAmount = paidAmount || 0;
       } else if (paymentStatus === 2) {
-        paidAmount = totalAmount;
+        paidAmount = finalAmount;
         remainingAmount = 0;
       } else if (paymentStatus === 3) {
         paidAmount = 0;
-        remainingAmount = totalAmount;
+        remainingAmount = finalAmount;
       }
 
       const payload = {
         ...formData,
         amount: totalAmount,
         items,
+        finalAmount,
         remainingAmount,
         paidAmount,
         ...(invoiceType === 3 && {
-          revenue: parseInt(totalAmount) - parseInt(totalPurchasePrice),
+          revenue: parseInt(finalAmount) - parseInt(totalPurchasePrice),
         }),
       };
 
@@ -326,26 +332,42 @@ const CreateInvoice = () => {
           <Card className={"space-y-4 shadow-lg"}>
             <div className="flex items-center justify-between">
               <h1 className="text-lg font-semibold">Payment Details</h1>
-              <span className="text-lg font-semibold">
-                Total Amount: {currencyFormatter.format(totalAmount)}
-              </span>
+              <div className="flex gap-3 items-center">
+                <span className="text-lg font-semibold">
+                  Sub Total: {currencyFormatter.format(totalAmount)}
+                </span>
+                <div class="border-l-2 border-slate-500 h-6"></div>
+
+                <span className="text-lg font-semibold">
+                  Total Amount:{" "}
+                  {currencyFormatter.format(
+                    totalAmount +
+                      parseInt(freight || 0) -
+                      parseInt(discount || 0)
+                  )}
+                </span>
+              </div>
             </div>
             <hr />
             <div className="flex flex-col lg:flex-row gap-4">
-              <Input
-                label={"Frieght Amount"}
-                name="frieght"
-                type="number"
-                maxLimit={totalAmount - 1}
-                placeholder="Enter frieght amount"
-              />
-              <Input
-                label={"Discount Amount"}
-                name="discount"
-                type="number"
-                maxLimit={totalAmount - 1}
-                placeholder="Enter discount amount"
-              />
+              {invoiceType === 2 && (
+                <Input
+                  label={"Freight Amount"}
+                  name="freight"
+                  type="number"
+                  maxLimit={totalAmount - 1}
+                  placeholder="Enter freight amount"
+                />
+              )}
+              {invoiceType !== 1 && (
+                <Input
+                  label={"Discount Amount"}
+                  name="discount"
+                  type="number"
+                  maxLimit={totalAmount - 1}
+                  placeholder="Enter discount amount"
+                />
+              )}
               <Select
                 label={"Payment Status"}
                 name="paymentStatusId"

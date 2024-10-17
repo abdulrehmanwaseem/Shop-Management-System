@@ -3,12 +3,9 @@ import moment from "moment";
 import { DataTable as Table } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Tag } from "primereact/tag";
-import { paymentStatus } from "../../lib/colors";
+import { invoiceType, paymentStatus } from "../../lib/colors";
 import { currencyFormatter } from "../../lib/currencyLogic";
-import {
-  useGetTransactionLogsQuery,
-  useLazyGetTransactionLogsByFilterQuery,
-} from "../../redux/apis/transactionLogsApi";
+import { useLazyGetTransactionLogsByFilterQuery } from "../../redux/apis/transactionLogsApi";
 import Card from "../../components/Card";
 import { Input, Select } from "../../components/FormElements";
 import { FormProvider, useForm } from "react-hook-form";
@@ -28,6 +25,18 @@ const columns = [
     },
   },
   { field: "invoice.name", header: "Name" },
+  {
+    field: "invoice.invoiceType.name",
+    header: "Type",
+    body: ({ invoice }) => {
+      return (
+        <Tag
+          severity={invoiceType[invoice.invoiceType.name]}
+          value={invoice.invoiceType.name}
+        />
+      );
+    },
+  },
   {
     field: "paymentType",
     header: "Payment Type",
@@ -55,27 +64,17 @@ const columns = [
 const Transaction = () => {
   const methods = useForm();
 
-  const invoiceType = methods.watch("invoiceTypeId");
+  const [GET, logs] = useLazyGetTransactionLogsByFilterQuery();
 
-  const { data: transactionLogsData } = useGetTransactionLogsQuery(
-    {},
-    { skip: invoiceType }
-  );
+  const { data: partyNamesData, isFetching } = useGetInvoiceConfigQuery({
+    invoiceType: "logs",
+  });
 
-  const [getTransactionLogs, { data }] =
-    useLazyGetTransactionLogsByFilterQuery();
-
-  const { data: invoiceTypeData } = useGetInvoicesTypeQuery();
-  const { data: partyNamesData } = useGetInvoiceConfigQuery(
-    {
-      invoiceType,
-    },
-    { skip: !invoiceType }
-  );
-
-  const onSubmit = (formData) => {
-    delete formData.invoiceTypeId;
-    getTransactionLogs(formData);
+  const onSubmit = async (formData) => {
+    console.log(formData);
+    try {
+      await GET(formData).unwrap();
+    } catch (e) {}
   };
 
   const noRecordFoundMsg = () => {
@@ -102,17 +101,10 @@ const Transaction = () => {
                 placeholder="Enter Invoice ID"
               />
               <Select
-                label={"Invoice Type"}
-                name="invoiceTypeId"
-                placeholder="Enter invoice name"
-                options={invoiceTypeData?.data}
-                filter={false}
-              />
-              <Select
                 label={"Search By Party Name"}
                 name="name"
                 value="name"
-                isDisable={!invoiceType}
+                isDisable={isFetching}
                 placeholder="Select party name"
                 options={partyNamesData?.data}
               />
@@ -129,7 +121,7 @@ const Transaction = () => {
         </FormProvider>
       </Card>
       <Table
-        value={data?.data || transactionLogsData?.data}
+        value={logs?.currentData?.data}
         emptyMessage={noRecordFoundMsg()}
         showGridlines
         resizableColumns
@@ -143,7 +135,6 @@ const Transaction = () => {
         currentPageReportTemplate="{first} to {last} of {totalRecords}"
         rowClassName="dark:bg-boxdark dark:text-slate-300"
         paginatorClassName="custom-paginator"
-        totalRecords={data?.totalRecords}
       >
         {columns?.map((col, i) => (
           <Column

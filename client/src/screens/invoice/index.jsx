@@ -99,6 +99,13 @@ const Invoice = () => {
         return <span>{currencyFormatter.format(discount)}</span>;
       },
     },
+    // {
+    //   field: "freight",
+    //   header: "Freight",
+    //   body: ({ freight }) => {
+    //     return <span>{currencyFormatter.format(freight)}</span>;
+    //   },
+    // },
     {
       field: "remainingAmount",
       header: "Remaining Amount",
