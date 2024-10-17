@@ -277,6 +277,49 @@ const updateInvoice = TryCatch(async (req, res, next) => {
 });
 
 const deleteInvoice = deleteOne(prisma.invoice);
+async function migrateInvoicesToParty() {
+  try {
+    const invoices = await prisma.invoice.findMany({
+      where: {
+        partyId: null, // Only migrate those that don't have a partyId yet
+      },
+    });
+
+    for (const invoice of invoices) {
+      const party = await prisma.party.findFirst({
+        where: {
+          name: invoice.name,
+          type: {
+            in: ["CUSTOMER", "VENDOR", "EXPENSE"],
+          },
+        },
+      });
+
+      if (party) {
+        await prisma.invoice.update({
+          where: { id: invoice.id },
+          data: {
+            partyId: party.id,
+          },
+        });
+
+        console.log(
+          `Invoice ID ${invoice.id} updated with partyId ${party.id}`
+        );
+      } else {
+        console.log(
+          `No matching party found for Invoice ID ${invoice.id} (name: ${invoice.name})`
+        );
+      }
+    }
+
+    console.log("Migration completed!");
+  } catch (error) {
+    console.error("Error during migration:", error);
+  } finally {
+    await prisma.$disconnect();
+  }
+}
 
 export {
   cancelInvoice,
