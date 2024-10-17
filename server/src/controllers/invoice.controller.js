@@ -72,10 +72,7 @@ const createInvoice = TryCatch(async (req, res, next) => {
           ...invoice,
           items: JSON.stringify(items),
           date: new Date(invoice.date),
-          finalAmount:
-            parseInt(invoice.amount) +
-            parseInt(invoice.frieght) -
-            parseInt(invoice.discount),
+          finalAmount: invoice.finalAmount,
         },
       });
 

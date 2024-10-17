@@ -126,10 +126,6 @@ model PaymentStatus {
 model Invoice {
   id            Int           @id @default(autoincrement())
   name          String
-
-  partyId       Int?
-  party         Party?     @relation(fields: [partyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-
   amount        Decimal
   invoiceTypeId Int
   invoiceType   InvoiceType   @relation(fields: [invoiceTypeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
@@ -142,7 +138,7 @@ model Invoice {
   remainingAmount Decimal @default(0)
   revenue         Decimal @default(0)
   discount        Decimal @default(0)
-  frieght        Decimal @default(0)
+  freight        Decimal @default(0)
   finalAmount     Decimal 
   items         String    @default("")
   transactionLog  TransactionLog[]
@@ -175,7 +171,6 @@ model Party {
   contact1  String?
   contact2  String?
   address   String?
-  invoices  Invoice[]
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
 }
