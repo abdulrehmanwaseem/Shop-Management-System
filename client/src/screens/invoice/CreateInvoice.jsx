@@ -24,7 +24,6 @@ import {
 } from "../../redux/apis/invoicesApi";
 import { useGetItemsQuery } from "../../redux/apis/itemsApi";
 import { invoiceSchema } from "../../Validations";
-import { Divider } from "primereact/divider";
 
 const CreateInvoice = () => {
   const [tableData] = useState([]);
@@ -41,6 +40,7 @@ const CreateInvoice = () => {
       freight: 0,
     },
   });
+  console.log(methods.formState.errors);
 
   const invoiceType = methods.watch("invoiceTypeId");
   const paymentStatus = methods.watch("paymentStatusId");
@@ -187,8 +187,11 @@ const CreateInvoice = () => {
         }),
       };
 
-      await createInvoice(payload).unwrap();
-      navigate("/invoices");
+      await createInvoice(payload)
+        .unwrap()
+        .then(() => {
+          navigate("/invoices");
+        });
     } catch (error) {
       toast.error("An error occurred, try again later");
       console.log(error);
@@ -284,8 +287,8 @@ const CreateInvoice = () => {
               <DatePicker label={"Invoice Date"} name="date" />
               <Select
                 label={"Invoice Name"}
-                name="name"
-                value="name"
+                name="partyId"
+                value="id"
                 isDisable={!invoiceType}
                 placeholder="Enter invoice name"
                 options={invoiceConfigData?.data}

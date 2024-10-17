@@ -70,14 +70,13 @@ export const invoiceSchema = (totalAmount) =>
     yup.object({
       invoiceTypeId: yup.number().required("Invoice Type is required"),
       date: yup.string().required("Invoice Date is required"),
-      name: yup.string().required("Invoice Name is required"),
+      partyId: yup.number().required("Invoice Name is required"),
       particular: yup.string().required("Particular is required"),
       paymentStatusId: yup.number().required("Payment Status is required"),
-      // paidAmount: yup.number().when("paymentStatusId", {
-      //   is: (paymentStatusId) => paymentStatusId === 1,
-      //   then: (schema) => schema.required("Paid Amount is required"),
-      //   otherwise: (schema) => schema.optional(),
-      // }),
+      paidAmount: yup
+        .number()
+        .min(0, "Remaining amount cannot be negative")
+        .typeError("Paid Amount is required"),
     })
   );
 

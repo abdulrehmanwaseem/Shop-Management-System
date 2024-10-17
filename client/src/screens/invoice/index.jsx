@@ -34,7 +34,7 @@ const Invoice = () => {
         return moment(date).format("DD/MMM/YYYY");
       },
     },
-    { field: "name", header: "Name" },
+    { field: "party", header: "Name" },
     { field: "particular", header: "Particular" },
     {
       field: "invoiceType",
@@ -187,6 +187,8 @@ const Invoice = () => {
       </p>
     );
   };
+
+  console.log(invoices?.data);
 
   return (
     <div className="flex flex-col gap-6">
