@@ -31,11 +31,11 @@ const __filename = fileURLToPath(import.meta.url);
 export const __dirname = dirname(__filename);
 
 app.use(cors(corsOptions));
-app.use(express.json());
+app.use(compression());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use(cookieParser());
-app.use(compression());
 
 // * Routes:
 app.use("/api/v1/auth", authRouter);
