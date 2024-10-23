@@ -134,7 +134,13 @@ const getDashboardTablesData = TryCatch(async (req, res, next) => {
       remainingAmount: { gt: 0 },
       isCancelled: false,
     },
-    include: {
+    select: {
+      remainingAmount: true,
+      party: {
+        select: {
+          name: true,
+        },
+      },
       paymentStatus: {
         select: {
           name: true,
@@ -157,7 +163,13 @@ const getDashboardTablesData = TryCatch(async (req, res, next) => {
       remainingAmount: { gt: 0 },
       isCancelled: false,
     },
-    include: {
+    select: {
+      remainingAmount: true,
+      party: {
+        select: {
+          name: true,
+        },
+      },
       paymentStatus: {
         select: {
           name: true,
@@ -176,11 +188,17 @@ const getDashboardTablesData = TryCatch(async (req, res, next) => {
         lte: endDate,
       },
 
-      invoiceTypeId: 1, // Expense invoices
+      invoiceTypeId: 1,
       remainingAmount: { gt: 0 },
       isCancelled: false,
     },
-    include: {
+    select: {
+      remainingAmount: true,
+      party: {
+        select: {
+          name: true,
+        },
+      },
       paymentStatus: {
         select: {
           name: true,
@@ -193,13 +211,14 @@ const getDashboardTablesData = TryCatch(async (req, res, next) => {
   });
 
   const lowOnStockItems = await prisma.$queryRaw`
-  SELECT "Item".*, "Company"."name" as "company"
+  SELECT "Item"."name", "Item"."stock", "Item"."lowOnStock", "Company"."name" as "company"
   FROM "Item"
   JOIN "Company" ON "Item"."companyId" = "Company"."id"
   WHERE "Item"."stock" < "Item"."lowOnStock"
   ORDER BY "Item"."stock" ASC
 `;
 
+  console.log({ recievableItems, payableItems });
   res.status(200).json({
     status: "Success",
     data: { lowOnStockItems, recievableItems, payableItems, expensesItems },
