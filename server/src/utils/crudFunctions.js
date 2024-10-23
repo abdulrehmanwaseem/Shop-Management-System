@@ -97,8 +97,15 @@ const getAll = (Model, populate = null, transformKeys = []) =>
 
 const createOne = (Model, type = null) =>
   TryCatch(async (req, res, next) => {
+    let { name, ...rest } = req.body;
+
+    if (name) {
+      name = name.trim();
+    }
+
     const dataToCreate = {
-      ...req.body,
+      ...rest,
+      ...(name && { name }),
       ...(type && { type }),
     };
 

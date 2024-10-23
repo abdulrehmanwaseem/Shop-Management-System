@@ -125,7 +125,6 @@ model PaymentStatus {
 
   model Invoice {
     id          Int      @id @default(autoincrement())
-    name        String
     partyId     Int?    
     party       Party?     @relation(fields: [partyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   

@@ -84,7 +84,6 @@ const createInvoice = TryCatch(async (req, res, next) => {
       const invoiceTable = await prismaClient.invoice.create({
         data: {
           ...invoice,
-          name: "test",
           items: JSON.stringify(items),
           date: new Date(invoice.date),
           finalAmount: invoice.finalAmount,
@@ -286,9 +285,11 @@ async function migrateInvoicesToParty() {
     });
 
     for (const invoice of invoices) {
+      console.log(invoice.name);
+
       const party = await prisma.party.findFirst({
         where: {
-          name: invoice.name,
+          name: { contains: invoice.name },
           type: {
             in: ["CUSTOMER", "VENDOR", "EXPENSE"],
           },
@@ -316,6 +317,41 @@ async function migrateInvoicesToParty() {
     console.log("Migration completed!");
   } catch (error) {
     console.error("Error during migration:", error);
+  } finally {
+    await prisma.$disconnect();
+  }
+}
+
+async function verifyInvoicePartyNames() {
+  try {
+    // Fetch all invoices that have a partyId and a name (since we are verifying the names)
+    const invoices = await prisma.invoice.findMany();
+
+    for (const invoice of invoices) {
+      // Find the corresponding party by partyId
+      const party = await prisma.party.findUnique({
+        where: { id: invoice.partyId },
+      });
+
+      if (party) {
+        // Compare invoice name and party name
+        if (party.name === invoice.name) {
+          console.log(
+            `Verified: Invoice ID ${invoice.id} has matching party name "${party.name}"`
+          );
+        } else {
+          console.log(
+            `Mismatch for Invoice ID ${invoice.id}: Invoice name "${invoice.name}" does not match Party name "${party.name}"`
+          );
+        }
+      } else {
+        console.log(`No party found for Invoice ID ${invoice.id}`);
+      }
+    }
+
+    console.log("Verification completed!");
+  } catch (error) {
+    console.error("Error during verification:", error);
   } finally {
     await prisma.$disconnect();
   }

@@ -2218,3 +2218,71 @@ PrismaClientInitializationError: Error querying the database: FATAL: the databas
   clientVersion: '5.16.0',
   errorCode: undefined
 }
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: 'P1001'
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
+PrismaClientInitializationError: Error querying the database: FATAL: the database system is starting up
+    at t (C:\Users\abdul\OneDrive\Desktop\Shop Management System\server\node_modules\@prisma\client\runtime\library.js:112:2493)
+    at async connectToDB (file:///C:/Users/abdul/OneDrive/Desktop/Shop%20Management%20System/server/src/config/dbConnection.js:7:5) {
+  clientVersion: '5.16.0',
+  errorCode: undefined
+}
